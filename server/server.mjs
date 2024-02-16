@@ -630,7 +630,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "1104c6c1-74f3-430e-9c8f-d39687a00f90"
+    "buildId": "c23a4910-dea9-4114-a28b-64f8d2cbade7"
   },
   "ui": {
     "primary": "green",
