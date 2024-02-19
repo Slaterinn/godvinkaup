@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "touch .output/.nojekyll && gh-pages -d .output/public"
+    "deploy": "gh-pages -d .output/public"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
