@@ -1,0 +1,264 @@
+{
+  "resolvedId": "C:/Users/lamthp/Documents/NUXT/godvinkaup/components/wine/wineJumbo.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\r\n  <section class=\"dark:bg-gray-900\">\r\n    <div class=\"py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16\">\r\n        <h1 class=\"mb-4 text-4xl font-teko tracking-widest leading-none  md:text-6xl lg:text-8xl text-[#FDA47E] dark:text-[#FDA47E] font-bold\">GÓÐ VÍNKAUP</h1>\r\n        <p class=\"mb-8 text-lg font-montserrat text-[#FDA47E] lg:text-2xl sm:px-16 lg:px-48 dark:text-[#FDA47E]\">\r\n          Hér er hægt að leita í vínlista ÁTVR og Sante ásamt einkunn þeirra frá Vivino. Einungis er um að ræða 750ml flöskur því allt annað er bara rugl.\r\n        </p>\r\n    </div>\r\n  </section>\r\n</template>",
+      "start": 1708338335465,
+      "end": 1708338335525,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1708338335525,
+      "end": 1708338335525,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1708338335525,
+      "end": 1708338335525,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1708338335525,
+      "end": 1708338335526,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1708338335525,
+      "end": 1708338335526,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1708338335526,
+      "end": 1708338335526,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1708338335526,
+      "end": 1708338335526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1708338335526,
+      "end": 1708338335526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1708338335526,
+      "end": 1708338335526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1708338335526,
+      "end": 1708338335526,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "const _sfc_main = {}\nimport { mergeProps as _mergeProps } from \"vue\"\nimport { ssrRenderAttrs as _ssrRenderAttrs } from \"vue/server-renderer\"\n\nfunction _sfc_ssrRender(_ctx, _push, _parent, _attrs) {\n  _push(`<section${_ssrRenderAttrs(_mergeProps({ class: \"dark:bg-gray-900\" }, _attrs))}><div class=\"py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16\"><h1 class=\"mb-4 text-4xl font-teko tracking-widest leading-none md:text-6xl lg:text-8xl text-[#FDA47E] dark:text-[#FDA47E] font-bold\">GÓÐ VÍNKAUP</h1><p class=\"mb-8 text-lg font-montserrat text-[#FDA47E] lg:text-2xl sm:px-16 lg:px-48 dark:text-[#FDA47E]\"> Hér er hægt að leita í vínlista ÁTVR og Sante ásamt einkunn þeirra frá Vivino. Einungis er um að ræða 750ml flöskur því allt annað er bara rugl. </p></div></section>`)\n}\n\n\nimport { useSSRContext as __vite_useSSRContext } from 'vue'\nconst _sfc_setup = _sfc_main.setup\n_sfc_main.setup = (props, ctx) => {\n  const ssrContext = __vite_useSSRContext()\n  ;(ssrContext.modules || (ssrContext.modules = new Set())).add(\"components/wine/wineJumbo.vue\")\n  return _sfc_setup ? _sfc_setup(props, ctx) : undefined\n}\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['ssrRender',_sfc_ssrRender]])",
+      "start": 1708338335526,
+      "end": 1708338335527,
+      "order": "normal",
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "C:/Users/lamthp/Documents/NUXT/godvinkaup/components/wine/wineJumbo.vue"
+        ],
+        "names": [],
+        "mappings": ";;;;EAAA,iBAAA,gBAAA,cACW,KAAK,EAAC,kBAAkB,IADnC",
+        "sourcesContent": [
+          "<template>\r\n  <section class=\"dark:bg-gray-900\">\r\n    <div class=\"py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16\">\r\n        <h1 class=\"mb-4 text-4xl font-teko tracking-widest leading-none  md:text-6xl lg:text-8xl text-[#FDA47E] dark:text-[#FDA47E] font-bold\">GÓÐ VÍNKAUP</h1>\r\n        <p class=\"mb-8 text-lg font-montserrat text-[#FDA47E] lg:text-2xl sm:px-16 lg:px-48 dark:text-[#FDA47E]\">\r\n          Hér er hægt að leita í vínlista ÁTVR og Sante ásamt einkunn þeirra frá Vivino. Einungis er um að ræða 750ml flöskur því allt annað er bara rugl.\r\n        </p>\r\n    </div>\r\n  </section>\r\n</template>"
+        ]
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1708338335527,
+      "end": 1708338335527,
+      "order": "normal"
+    }
+  ]
+}
