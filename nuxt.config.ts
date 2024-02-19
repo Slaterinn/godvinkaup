@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   app: {
     head: {},
-    baseURL: '/https://slaterinn.github.io/godvinkaup/'
+    baseURL: 'https://slaterinn.github.io/godvinkaup/'
   },
   devtools: { enabled: true },
   alias: {
