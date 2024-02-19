@@ -1,7 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    head: {}
+    head: {},
+    baseURL: '/https://slaterinn.github.io/godvinkaup/'
   },
   devtools: { enabled: true },
   alias: {
