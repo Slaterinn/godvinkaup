@@ -1,1 +1,0 @@
-{"version":3,"file":"beer-c232023b.js","sources":["../../../../pages/beer.vue"],"sourcesContent":["<script setup>\r\nuseHead({\r\n  title: \"Bjórar\",\r\n})\r\n</script>\r\n\r\n<template>\r\n  <div>\r\n    This is the beers site\r\n  </div>\r\n</template>"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;AACA,YAAQ;AAAA,MACN,OAAO;AAAA,IACT,CAAC;;;;;;;;;;;;"}
