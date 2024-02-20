@@ -62,145 +62,127 @@
 </script>
 
 <template>
-  <div class="h-screen w-100 flex justify-center items-center">
-    
-    <div class="max-w-4xl md:w-full font-teko">
-      
-      <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
-        <h3>Verður að prófa</h3>
-      </div>
-      <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="bg-[#FFE7D4] rounded-lg p-[5%]">
-
-          <img :src="item.img" :alt="item.name" draggable="false" class="ml-[10%]">
-          <div class="grid grid-cols-1 gap-3 mx-[10%]">
-            <h2 class="text-5xl font-medium">{{ item.name }}</h2>
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.seller }}</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">SÖLUAÐILI</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.price }}</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">VERÐ</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">Ítalía</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">LAND</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">4.2</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">EINKUNN</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.grapes}}</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">ÞRÚGUR</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.description }}</span>
-              </div>
-              <div>
-              <span class="text-md text-lg text-[#7a7a7a]">LÝSING</span>
-              </div>
-            </div>
-          </div>
-
-      </UCarousel>
+  <div class="min-h-screen flex justify-center items-center">
+  <div class="max-w-screen-md w-full px-4 font-teko">
+    <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
+      <h3>Verður að prófa</h3>
     </div>
-  </div>
-
-  <div class="h-screen w-100 flex justify-center items-center">
-    
-    <div class="max-w-4xl md:w-full font-teko">
-      
-      <div class="text-2xl font-montserrat mb-10 text-[#DBD2D2] text-center">
-        <h3>Skemmtileg kaup</h3>
-      </div>
-      <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="bg-[#DBD2D2] rounded-lg p-[5%]">
-
-          <img :src="item.img" :alt="item.name" draggable="false" class="ml-[10%]">
-          <div class="grid grid-cols-1 gap-3 mx-[10%]">
-            <h2 class="text-5xl font-medium">{{ item.name }}</h2>
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.seller }}</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">SÖLUAÐILI</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.price }}</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">VERÐ</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">Ítalía</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">LAND</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">4.2</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">EINKUNN</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.grapes}}</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">ÞRÚGUR</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-              <span class="text-md text-xl">{{ item.description }}</span>
-              </div>
-              <div>
-              <span class="text-md text-[#7a7a7a]">Lýsing</span>
-              </div>
-            </div>
+    <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-4 md:p-[5%]">
+      <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
+      <div class="grid grid-cols-1 gap-3">
+        <h2 class="text-5xl font-medium">{{ item.name }}</h2>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.seller }}</span>
           </div>
-
-      </UCarousel>
-    </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">SÖLUAÐILI</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.price }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">VERÐ</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">Ítalía</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">LAND</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">4.2</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">EINKUNN</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.grapes }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">ÞRÚGUR</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.description }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">LÝSING</span>
+          </div>
+        </div>
+      </div>
+    </UCarousel>
   </div>
+</div>
+
+<div class="min-h-screen flex justify-center items-center">
+  <div class="max-w-screen-md w-full px-4 font-teko">
+    <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
+      <h3>Verður að prófa</h3>
+    </div>
+    <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="bg-[#FFE7D4] rounded-lg p-4 md:p-[5%]">
+      <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
+      <div class="grid grid-cols-1 gap-3">
+        <h2 class="text-5xl font-medium">{{ item.name }}</h2>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.seller }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">SÖLUAÐILI</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.price }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">VERÐ</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">Ítalía</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">LAND</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">4.2</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">EINKUNN</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.grapes }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">ÞRÚGUR</span>
+          </div>
+        </div>
+        <div>
+          <div>
+            <span class="text-md text-xl">{{ item.description }}</span>
+          </div>
+          <div>
+            <span class="text-md text-lg text-[#7a7a7a]">LÝSING</span>
+          </div>
+        </div>
+      </div>
+    </UCarousel>
+  </div>
+</div>
 </template>
