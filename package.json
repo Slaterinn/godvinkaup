@@ -8,7 +8,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "gh-pages -d .output/public"
+    "deploy": "gh-pages -d .output/public",
+    "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",
