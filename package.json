@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "deploy": "gh-pages -d .output/public",
+    "start": "nuxt start",
     "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
