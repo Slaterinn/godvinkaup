@@ -1,4 +1,4 @@
-import wines from "@/data/wines_json.json";
+import wines from "~/data/wines_json.json";
 
 
 

@@ -1,8 +1,8 @@
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
-    head: {},
-    baseURL: 'https://slaterinn.github.io/godvinkaup/'
+    head: {}
   },
   devtools: { enabled: true },
   alias: {
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/ui']
+  modules: ['@nuxt/ui'],
 });
 
 
