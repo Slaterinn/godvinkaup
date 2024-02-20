@@ -95,7 +95,7 @@ const resetFilters = () => {
 <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5">
   <div class="m-2 max-w-screen-md">
     <div class="rounded-xl p-6">
-      <h2 class="text-[#3E3737] text-xl font-bold">Þrengdu niðurstöðurnar</h2>
+      <h2 class=" text-xl font-bold">Þrengdu niðurstöðurnar</h2>
       <p class="mt-1 text-sm text-[#7a7a7a]">Prófaðu síurnar. Með leitinni er hægt að leita að ýmsum eiginleikum, eins og nafni, árgerð og landi.</p>
       <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         <div class="flex flex-col">
