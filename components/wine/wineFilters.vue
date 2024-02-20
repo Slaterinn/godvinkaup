@@ -92,7 +92,7 @@ const resetFilters = () => {
 </script>
 
 <template>
-<div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5">
+<div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737]">
   <div class="m-2 max-w-screen-md">
     <div class="rounded-xl p-6">
       <h2 class=" text-xl font-bold">Þrengdu niðurstöðurnar</h2>
