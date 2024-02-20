@@ -62,10 +62,10 @@
 </script>
 
 <template>
-  <div class="min-h-screen flex justify-center items-center">
+  <div class="min-h-screen flex justify-center items-center mt-2">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
-      <h3>Verður að prófa</h3>
+      <h3>Skyldukaup</h3>
     </div>
     <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-1 md:p-[5%]">
       <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
@@ -124,10 +124,10 @@
   </div>
 </div>
 
-<div class="min-h-screen flex justify-center items-center">
+<div class="min-h-screen flex justify-center items-center mt-2">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
-      <h3>Verður að prófa</h3>
+      <h3>Nokkur skemmtileg kaup</h3>
     </div>
     <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="bg-[#FFE7D4] rounded-lg p-1 md:p-[5%]">
       <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
