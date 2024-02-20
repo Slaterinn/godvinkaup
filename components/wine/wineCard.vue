@@ -32,7 +32,7 @@ handleWineColor();
     <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5">
       <div class="flex flex-col p-7 font-teko">
         <p class="text-lg" :class="`${wineColor}`">{{wineType}}</p>
-        <h2 class="mb-10 text-5xl font-medium  dark:text-white">{{ wine.wine_name }}</h2>
+        <h2 class="mb-10 text-5xl font-medium ">{{ wine.wine_name }}</h2>
         <div class="grid grid-cols-2 gap-4">
           <div>
             <div>
