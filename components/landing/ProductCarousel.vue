@@ -63,7 +63,7 @@
 
 <template>
   <div class="min-h-screen flex justify-center items-center">
-  <div class="max-w-screen-md w-full px-4 font-teko">
+  <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class="text-2xl font-montserrat mb-10 text-center text-[#FDA47E]">
       <h3>Verður að prófa</h3>
     </div>
