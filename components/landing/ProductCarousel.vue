@@ -70,10 +70,10 @@
     <div class="text-5xl text-medium font-montserrat mb-7 text-center text-[#FDA47E]">
       <h3>Algjör skyldukaup</h3>
     </div>
-    <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-1 md:p-[5%]">
+    <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 md:p-[5%]">
       <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
       <div class="flex flex-col">
-        <div class="grid grid-cols-1 gap-5">
+        <div class="grid grid-cols-1 gap-3 lg:gap-5">
           <h2 class="text-5xl font-medium">{{ item.name }}</h2>
           <div>
             <div>
