@@ -1,7 +1,7 @@
 <template>
-  <div class="relative h-screen w-100 bg-no-repeat bg-cover bg-bottom bg-[url('~/assets/images/background.jpg')]">
+  <div class="relative h-dvh w-100 bg-no-repeat bg-cover bg-bottom bg-[url('~/assets/images/background.jpg')]">
     <div class="z-10 absolute w-full h-full flex justify-center items-center">
-      <div class="text-center md:w-1/2">
+      <div class="text-center lg:w-1/2">
         <h1 class="text-7xl sm:text-8xl md:text-9xl font-montserrat mb-10 text-white">Góð vínkaup</h1>
         <p class="mt-6 text-4xl sm:text-5xl md:text-6xl tracking-wider font-teko text-white"> Hjálpar þér að gera betri kaup </p>
         <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -11,7 +11,6 @@
       </div>
 
       <div class="absolute text-[#ACAC9A] flex bottom-5 justify-center items-center grid grid-cols-1 gap-3 text-center">
-        <p class="text-l md:text-2xl">Nokkur góð kaup</p>
         <UIcon name="i-heroicons-arrow-small-down-solid" class="text-5xl md:text-7xl mx-auto"/>
       </div>
 
