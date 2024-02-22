@@ -32,7 +32,7 @@
 
   
 
-<nav class="fixed top-0 left-0 right-0 z-50 bg-[#020201] text-[#FDA47E] ">
+<nav class="fixed top-0 left-0 right-0 z-50 bg-[#2A2424] text-[#FDA47E] ">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
         <span class="self-center text-3xl font-teko whitespace-nowrap">Góð Vínkaup</span>
@@ -44,7 +44,7 @@
         </svg>
     </button>
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
+      <ul class="font-medium font-montserrat flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
         <li>
           <a href="/wine" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Vín</a>
         </li>

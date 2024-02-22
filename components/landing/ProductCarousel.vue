@@ -61,6 +61,15 @@
     price: '4.900 kr',
     grapes: 'Tempranillo 80%, Garnacha 15%, Mazuelo 3%, Graciano 2%.',
     country: 'Spánn'
+  }
+  , {
+    name: '2011 Viña Bosconia Tinto Reserva',
+    img: 'https://images.vivino.com/thumbs/eDyHmY-EQcG28_Ezlpgq5A_pb_x600.png',
+    description: 'Þetta vín hefur yfir meira en áratug þróast yfir í djúpan rauðan lit með örlítilli appelsínugulu. Lyktin ber með sér ágenga ávexti og bragðið er þétt, mjúkt og fínt (þetta er ekki lýsing á rúminu mínu)',
+    seller: 'Sante',
+    price: '4.900 kr',
+    grapes: 'Tempranillo 80%, Garnacha 15%, Mazuelo 3%, Graciano 2%.',
+    country: 'Spánn'
   }]
 
   const props = defineProps({
@@ -73,14 +82,15 @@
 <template>
 <div class="flex justify-center items-center py-20">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
-    <div class="text-4xl md:text-5xl font-teko tracking-wider mb-7  text-[#FDA47E]">
-      <h3>Algjör skyldukaup:</h3>
+    <div class=" font-teko tracking-wider mb-7 text-[#FDA47E]">
+      <h3 class="text-4xl md:text-5xl">Bestu kaupin:</h3>
+      <p>Hæstu einkunnir miðað við verð af hverri víntegund</p>
     </div>
     <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
       <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
       <div class="flex flex-col p-5">
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
-          <h2 class="text-5xl font-medium">{{ item.name }}</h2>
+          <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
           <div>
             <div>
               <span class="text-md sm:text-lg">{{ item.description }}</span>
@@ -107,7 +117,7 @@
           </div>
         </div>
         <div class="flex mt-4 md:mt-6 tracking-wide">
-          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
+          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
           <a :href="item.link_vivino" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
         </div>
       </div>
@@ -151,7 +161,7 @@
           </div>
         </div>
         <div class="flex mt-4 md:mt-6 tracking-wide">
-          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
+          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
           <a :href="item.link_vivino" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
         </div>
       </div>
