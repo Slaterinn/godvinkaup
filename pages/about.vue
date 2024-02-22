@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar />
-    <slot />
+    This is the about site
   </div>
 </template>

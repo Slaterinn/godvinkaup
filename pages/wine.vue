@@ -1,7 +1,18 @@
 <script setup>
 useHead({
-  title: "Vín",
-});
+  htmlAttrs: {lang: 'is'},
+  link: [{ rel: 'canonical', href: 'https://godvinkaup.is/wine' }],
+})
+
+useSeoMeta({
+  title: 'Vín',
+  ogTitle: 'Vín',
+  description: 'Góð Vínkaup hjálpar þér að finna góð vín á betra verði.',
+  ogDescription: 'Góð Vínkaup hjálpar þér að finna góð vín á betra verði.',
+  ogImage: '~/assets/images/background.jpg',
+  ogLocale: 'is-IS',
+  ogUrl: 'https://godvinkaup.is/wine'
+})
 
 const route = useRoute();
 
