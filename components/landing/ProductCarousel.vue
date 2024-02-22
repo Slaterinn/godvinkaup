@@ -8,25 +8,31 @@
     price: '2.599 kr',
     grapes: 'Shiraz/Syrah, Tempranillo',
     country: 'Spánn',
-    link_store: '',
-    link_vivino: '',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25431/',
+    link_vivino: 'https://www.vivino.com/US-CA/en/felix-solis-valdepenas-mucho-mas-tinto/w/6266660',
     rating: '4.2'
   }, {
     name: 'Marlborough sun',
     img: 'https://images.vivino.com/thumbs/HUd1YqCsQjS657o-rAtXJg_pb_x600.png',
-    description: 'Þurrt og súrt hvítvín sem hefur ferskan ávaxtailm og bragð af sítrus, greip og ástaraldin.',
+    description: 'Þurrt, frekar létt og súrt Sauvignon Blanc hvítvín frá Nýja-Sjálandi sem hefur ferskan ávaxtailm og bragð af sítrus, greip og ástaraldin. Parast vel með skelfisk og grænmetisréttum.',
     seller: 'ÁTVR',
     price: '2.799 kr',
     grapes: 'Sauvignon Blanc',
-    country: 'Nýja-Sjáland'
+    country: 'Nýja-Sjáland',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=29580/',
+    link_vivino: 'https://www.vivino.com/US/en/marlborough-sun-sauvignon-blanc-marlborough/w/1624286',
+    rating: '4.3'
   }, {
     name: 'Torre Mora Scalunera Etna Rosato',
     img: 'https://images.vivino.com/thumbs/SWRDzZF1RWyMhSPMdyAcMA_pb_x600.png',
-    description: 'Óvænt en kærkomin hlýja og krydd einkenna lyktina af þessu fölbleika rósavíni sem hefur bragð af sítrusávöxtum í bland við málm- og saltkeim. ',
+    description: 'Nerello Mascalese þrúgan er ræktuð í hlíðum sisiliska eldfjallsins Etna og er stundum líkt við Pinot Noir. Hún býður upp á ávaxtabragð, t.d. jarðaber og kirsuber og er frekar ljós að lit með nokkra sýru. Það væri sniðugt að segja að óvænt hlýja vínsins væri endurspeglun á eldfjallinu sem þrúgan er ræktuð við en það væri aðeins of lúðalegt.',
     seller: 'ÁTVR',
     price: '3.499 kr',
     grapes: 'Nerello Mascalese',
-    country: 'Ítalía'
+    country: 'Ítalía',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25547/',
+    link_vivino: 'https://www.vivino.com/US-CA/en/torre-mora-etna-scalunera-etna-rosato-etna/w/6326655',
+    rating: '4.1'
   }]
 
 
@@ -111,60 +117,42 @@
 
 <div class="flex justify-center items-center py-20 bg-[#2A2424]">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
-    <div class="text-5xl font-montserrat mb-10 text-center text-[#FDA47E]">
-      <h3>Nokkur skemmtileg</h3>
+    <div class="text-4xl md:text-5xl font-teko tracking-wider mb-7  text-[#FDA47E]">
+      <h3>Nokkur skemmtileg:</h3>
     </div>
-    <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="bg-[#FFE7D4] rounded-lg p-1 md:p-[5%]">
+    <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
       <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
-      <div class="grid grid-cols-1 gap-3">
-        <h2 class="text-5xl font-medium">{{ item.name }}</h2>
-        <div>
+      <div class="flex flex-col p-5">
+        <div class="grid grid-cols-1 gap-3 lg:gap-5">
+          <h2 class="text-5xl font-medium">{{ item.name }}</h2>
           <div>
-            <span class="text-md text-xl">{{ item.seller }}</span>
+            <div>
+              <span class="text-md sm:text-lg">{{ item.description }}</span>
+            </div>
+            <div>
+              <span class="text-md sm:text-lg text-[#7a7a7a]">LÝSING</span>
+            </div>
           </div>
           <div>
-            <span class="text-md text-lg text-[#7a7a7a]">SÖLUAÐILI</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <span class="text-md text-xl">{{ item.price }}</span>
-          </div>
-          <div>
-            <span class="text-md text-lg text-[#7a7a7a]">VERÐ</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <span class="text-md text-xl">Ítalía</span>
+            <div>
+              <span class="text-md sm:text-lg">{{ item.price }}</span>
+            </div>
+            <div>
+              <span class="text-md sm:text-lg text-[#7a7a7a]">VERÐ</span>
+            </div>
           </div>
           <div>
-            <span class="text-md text-lg text-[#7a7a7a]">LAND</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <span class="text-md text-xl">4.2</span>
-          </div>
-          <div>
-            <span class="text-md text-lg text-[#7a7a7a]">EINKUNN</span>
+            <div>
+              <span class="text-md sm:text-lg">{{ item.rating }}</span>
+            </div>
+            <div>
+              <span class="text-md sm:text-lg text-[#7a7a7a]">EINKUNN</span>
+            </div>
           </div>
         </div>
-        <div>
-          <div>
-            <span class="text-md text-xl">{{ item.grapes }}</span>
-          </div>
-          <div>
-            <span class="text-md text-lg text-[#7a7a7a]">ÞRÚGUR</span>
-          </div>
-        </div>
-        <div>
-          <div>
-            <span class="text-md text-xl">{{ item.description }}</span>
-          </div>
-          <div>
-            <span class="text-md text-lg text-[#7a7a7a]">LÝSING</span>
-          </div>
+        <div class="flex mt-4 md:mt-6 tracking-wide">
+          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
+          <a :href="item.link_vivino" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
         </div>
       </div>
     </UCarousel>
