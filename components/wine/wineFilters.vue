@@ -93,8 +93,8 @@ const resetFilters = () => {
 
 <template>
   <!-- Modal toggle -->
-<div class="mx-auto max-w-3xl md:w-full font-montserrat">
-  <button data-modal-target="wine-filters" data-modal-toggle="wine-filters" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-[#897171] rounded-lg hover:bg-[#A48B8A] focus:ring-4 focus:outline-none focus:ring-black-200  dark:hover:bg-[#A48B8A] dark:focus:ring-black-700 ms-3" type="button">
+<div class="mx-auto max-w-3xl md:w-full font-teko ">
+  <button data-modal-target="wine-filters" data-modal-toggle="wine-filters" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#A48B8A] focus:ring-4 focus:outline-none focus:ring-black-200  dark:hover:bg-[#A48B8A] dark:focus:ring-black-700 ms-3" type="button">
     Síur
   </button>
 </div>
@@ -134,9 +134,11 @@ const resetFilters = () => {
         </div>
 
         <div class="mt-6 grid w-full grid-cols-2 justify-end space-x-4 md:flex font-teko text-m">
+          <button class="active:scale-95 rounded-lg text-gray-900 bg-gray-300 px-8 py-2 font-medium  outline-none focus:ring hover:opacity-90"
+                  data-modal-hide="wine-filters">Loka</button>
           <button @click ="resetFilters" 
                   class="active:scale-95 rounded-lg text-gray-900 bg-gray-300 px-8 py-2 font-medium  outline-none focus:ring hover:opacity-90"
-                  data-modal-hide="wine-filters">Endurstilla</button>
+                  >Endurstilla</button>
           <button @click="onChangeFilter"
                   class="active:scale-95 rounded-lg px-8 py-2 font-medium text-white bg-[#625A5A] outline-none focus:ring hover:opacity-90"
                   data-modal-hide="wine-filters">Leita</button>
