@@ -134,11 +134,9 @@ const resetFilters = () => {
         </div>
 
         <div class="mt-6 grid w-full grid-cols-2 justify-end space-x-4 md:flex font-teko text-m">
-          <button class="active:scale-95 rounded-lg text-gray-900 bg-gray-300 px-8 py-2 font-medium  outline-none focus:ring hover:opacity-90"
-                  data-modal-hide="wine-filters">Loka</button>
           <button @click ="resetFilters" 
                   class="active:scale-95 rounded-lg text-gray-900 bg-gray-300 px-8 py-2 font-medium  outline-none focus:ring hover:opacity-90"
-                  >Endurstilla</button>
+                  data-modal-hide="wine-filters">Endurstilla</button>
           <button @click="onChangeFilter"
                   class="active:scale-95 rounded-lg px-8 py-2 font-medium text-white bg-[#625A5A] outline-none focus:ring hover:opacity-90"
                   data-modal-hide="wine-filters">Leita</button>
