@@ -16,7 +16,6 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
-    This is the beers site
-  </div>
+  <beerJumbo />
+  <beerTable />
 </template>

@@ -18,10 +18,13 @@ const handleWineColor = () =>{
   } else if(props.wine.category == 'Rose') {
     wineColor = 'text-[#f98e72]';
     wineType = 'Rósavín';
-  } else {
+  } else if(props.wine.category == 'Sparkling Wine') {
     wineColor = 'text-[#fec67a]';
     wineType = 'Freyðivín';
   }
+    else {wineColor = 'text-gray-200';
+    wineType = props.wine.category};
+  
 };
 handleWineColor();
 
