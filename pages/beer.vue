@@ -13,9 +13,14 @@ useSeoMeta({
   ogLocale: 'is-IS',
   ogUrl: 'https://godvinkaup.is/beer'
 })
+
+
+const {data: beers} = await useFetchBeers({
+
+});
 </script>
 
 <template>
   <beerJumbo />
-  <beerTable />
+  <beerCards :beers="beers"/>
 </template>
