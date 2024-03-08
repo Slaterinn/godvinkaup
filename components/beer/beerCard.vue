@@ -41,11 +41,12 @@ handleBeerColor();
     <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737] ">
       <div class="flex flex-col p-7 font-teko">
         <p class="text-xl" :class="`${beerColor}`">{{beer.taste_group1}}</p>
-        <h2 class="mb-10 text-5xl font-medium ">{{ beer.atvr_name }}</h2>
+        <h2 class="text-5xl font-medium ">{{ beer.atvr_name }}</h2>
+        <p class="text-xl mb-10">{{ beer.producer }}</p>
         <div class="grid grid-cols-2 gap-4">
           <div>
             <div>
-            <span class="text-md text-xl">{{ beer.producer }}</span>
+            <span class="text-md text-xl">{{ parseInt(beer.volume).toLocaleString("de-DE") + 'ml ' + beer.container_name }}</span>
             </div>
             <div>
             <span class="text-md text-[#7a7a7a]">BRUGGARI</span>
@@ -72,7 +73,7 @@ handleBeerColor();
 
           <div>
             <div>
-            <span class="text-md text-xl">{{ beer.rating }}</span>
+            <span class="text-md text-xl">{{ Math.round(beer.rating * 100) / 100 }}</span>
             </div>
             <div>
             <span class="text-md text-[#7a7a7a]">EINKUNN</span>
