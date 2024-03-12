@@ -40,7 +40,7 @@ handleBeerColor();
   <div>
     <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737] ">
       <div class="flex flex-col p-7 font-teko">
-        <p class="text-xl" :class="`${beerColor}`">{{beer.taste_group1}}</p>
+        <p class="text-xl" :class="`${beerColor}`">{{beer.taste_group1}} - {{beer.taste_group2}}</p>
         <h2 class="text-5xl font-medium ">{{ beer.atvr_name }}</h2>
         <p class="text-xl mb-10">{{ beer.producer }}</p>
         <div class="grid grid-cols-2 gap-4">

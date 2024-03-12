@@ -27,13 +27,13 @@ export default defineEventHandler((event) => {
 
   if(group1) {
     filteredBeers = filteredBeers.filter((beer) => {
-      return beer.group1 === group1 || group1 === 'Allar'
+      return beer.taste_group1 === group1 || group1 === 'Allar'
     })
   } 
 
   if(group2) {
     filteredBeers = filteredBeers.filter((beer) => {
-      return beer.group2 === group2 || group2 === 'Allar'
+      return beer.taste_group2 === group2 || group2 === 'Allar'
     })
   } 
 
