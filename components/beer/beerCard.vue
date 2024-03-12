@@ -49,7 +49,7 @@ handleBeerColor();
             <span class="text-md text-xl">{{ parseInt(beer.volume).toLocaleString("de-DE") + 'ml ' + beer.container_name }}</span>
             </div>
             <div>
-            <span class="text-md text-[#7a7a7a]">BRUGGARI</span>
+            <span class="text-md text-[#7a7a7a]">Ílát</span>
             </div>
           </div>
 

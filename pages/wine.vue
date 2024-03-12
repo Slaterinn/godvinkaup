@@ -32,9 +32,6 @@ watch(
   () => route.query, 
   () => refresh()
 );
-
-
-
 </script>
 
 <template>

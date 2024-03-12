@@ -14,13 +14,28 @@ useSeoMeta({
   ogUrl: 'https://godvinkaup.is/beer'
 })
 
+const route = useRoute();
 
-const {data: beers} = await useFetchBeers({
+const maxPrice  = computed(() => route.query.maxPrice)
+const group1    = computed(() => route.query.group1)
+const group2    = computed(() => route.query.group2)
+const search    = computed(() => route.query.search)
 
+const {data: beers, refresh} = await useFetchBeers({
+  maxPrice,
+  group1,
+  group2,
+  search,
 });
+
+watch(
+  () => route.query, 
+  () => refresh()
+);
 </script>
 
 <template>
   <beerJumbo />
+  <beerFilters />
   <beerCards :beers="beers"/>
 </template>
