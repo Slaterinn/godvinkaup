@@ -47,5 +47,13 @@ export default defineEventHandler((event) => {
     return (b.rating) - (a.rating);
   });
 
+  //SKila bara ákveðnum fjölda lína
+  filteredBeers  = filteredBeers.filter(function(wine) {
+    if (this.count < 100 && wine) {
+      this.count++;
+      return true;
+    }
+    return false;
+  }, {count: 0});
   return filteredBeers;
 });
