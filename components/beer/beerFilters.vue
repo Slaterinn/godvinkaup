@@ -23,6 +23,18 @@ watch(() => beerAttributes.value.group1, (newValue) => {
   }
 });
 
+// Add a watcher for changes in wineType1
+watch(() => beerAttributes.value.group1, (newValue) => {
+  // Check if wineType2 is currently selected
+  const currentWineType2 = beerAttributes.value.group2;
+
+  // If wineType2 is not 'Allar' and the current selection is not valid with the new selection in wineType1
+  if (currentWineType2 !== 'Allar' && !beerTypes.find(item => item.taste_group1 === newValue && item.taste_group2 === currentWineType2)) {
+    // Reset wineType2 to 'Allar'
+    beerAttributes.value.group2 = 'Allar';
+  }
+});
+
 const onChangeFilter = () => {
   const queryParams = {};
   if (beerAttributes.value.group1){

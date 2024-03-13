@@ -1,19 +1,19 @@
 [
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": ""
+    "taste_group2": "Amber ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Ablackale"
+    "taste_group2": "American black ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Amber"
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Barley"
+    "taste_group2": "Barley wine"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
@@ -21,43 +21,39 @@
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Brown"
+    "taste_group2": "Brown ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Creamale"
+    "taste_group2": "Cream ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Golden"
+    "taste_group2": "Golden ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Pale"
+    "taste_group2": "Pale ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Red"
+    "taste_group2": "Red ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Strong"
+    "taste_group2": "Strong ale"
   },
   {
     "taste_group1": "Amer\u00edskt og breskt \u00f6l",
-    "taste_group2": "Wee"
+    "taste_group2": "Wee heavy"
   },
   {
     "taste_group1": "Anna\u00f0",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "Annar lager",
-    "taste_group2": ""
-  },
-  {
-    "taste_group1": "Annar lager",
-    "taste_group2": "Annarl"
+    "taste_group2": "A\u00f0rir lagerbj\u00f3rar"
   },
   {
     "taste_group1": "Annar lager",
@@ -81,7 +77,7 @@
   },
   {
     "taste_group1": "\u00c1vaxta- og krydd\u00f6l",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "\u00c1vaxta- og krydd\u00f6l",
@@ -97,15 +93,15 @@
   },
   {
     "taste_group1": "Belg\u00edskt \u00f6l",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
+  },
+  {
+    "taste_group1": "Belg\u00edskt \u00f6l",
+    "taste_group2": "Belgian pale ale"
   },
   {
     "taste_group1": "Belg\u00edskt \u00f6l",
     "taste_group2": "Blonde"
-  },
-  {
-    "taste_group1": "Belg\u00edskt \u00f6l",
-    "taste_group2": "Bpale"
   },
   {
     "taste_group1": "Belg\u00edskt \u00f6l",
@@ -117,7 +113,7 @@
   },
   {
     "taste_group1": "Belg\u00edskt \u00f6l",
-    "taste_group2": "Quad"
+    "taste_group2": "Quadrupel"
   },
   {
     "taste_group1": "Belg\u00edskt \u00f6l",
@@ -133,59 +129,55 @@
   },
   {
     "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": "Annarhv"
+    "taste_group2": "Dunkelweizen"
   },
   {
     "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": "Dunkelw"
+    "taste_group2": "Hefeweizen"
   },
   {
     "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": "Hefe"
+    "taste_group2": "Weizenbock"
   },
   {
     "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": "Wbock"
-  },
-  {
-    "taste_group1": "Hveitibj\u00f3r",
-    "taste_group2": "Wit"
+    "taste_group2": "Witbier"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": "Bipa"
+    "taste_group2": "Belgian IPA"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": "Dipa"
+    "taste_group2": "DIPA"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": "Ipa"
+    "taste_group2": "IPA"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": "Neipa"
+    "taste_group2": "NEIPA"
   },
   {
     "taste_group1": "IPA",
-    "taste_group2": "Session"
+    "taste_group2": "Session IPA"
   },
   {
     "taste_group1": "Lj\u00f3s lager",
-    "taste_group2": ""
+    "taste_group2": "American adjunct"
   },
   {
     "taste_group1": "Lj\u00f3s lager",
-    "taste_group2": "Adjunkt"
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "Lj\u00f3s lager",
@@ -201,7 +193,7 @@
   },
   {
     "taste_group1": "Lj\u00f3s lager",
-    "taste_group2": "Huml"
+    "taste_group2": "Humla\u00f0ur lager"
   },
   {
     "taste_group1": "Lj\u00f3s lager",
@@ -229,11 +221,7 @@
   },
   {
     "taste_group1": "Stout og Porter",
-    "taste_group2": ""
-  },
-  {
-    "taste_group1": "Stout og Porter",
-    "taste_group2": "Annarst"
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "Stout og Porter",
@@ -249,11 +237,11 @@
   },
   {
     "taste_group1": "S\u00farbj\u00f3r",
-    "taste_group2": ""
+    "taste_group2": "Anna\u00f0"
   },
   {
     "taste_group1": "S\u00farbj\u00f3r",
-    "taste_group2": "\u00c1lambic"
+    "taste_group2": "\u00c1vaxtalambic"
   },
   {
     "taste_group1": "S\u00farbj\u00f3r",
@@ -261,14 +249,10 @@
   },
   {
     "taste_group1": "S\u00farbj\u00f3r",
-    "taste_group2": "Geuze"
+    "taste_group2": "Geuze og lambic"
   },
   {
     "taste_group1": "S\u00farbj\u00f3r",
     "taste_group2": "Gose"
-  },
-  {
-    "taste_group1": "S\u00farbj\u00f3r",
-    "taste_group2": "Sur"
   }
 ]
