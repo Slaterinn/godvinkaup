@@ -87,7 +87,7 @@
       <p>Hæstu einkunnir miðað við verð af hverri víntegund</p>
     </div>
     <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
-      <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
+      <img title="Highlighted_product" :src="item.img" :alt="item.name" draggable="false" loading="lazy" class="w-auto max-h-[70vh] md:max-h-full">
       <div class="flex flex-col p-5">
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
           <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
@@ -117,8 +117,8 @@
           </div>
         </div>
         <div class="flex mt-4 md:mt-6 tracking-wide">
-          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
-          <a :href="item.link_vivino" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
+          <a :href="item.link_store" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
+          <a :href="item.link_vivino" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
         </div>
       </div>
     </UCarousel>
@@ -131,7 +131,7 @@
       <h3>Nokkur skemmtileg:</h3>
     </div>
     <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
-      <img :src="item.img" :alt="item.name" draggable="false" class="w-auto max-h-[70vh] md:max-h-full">
+      <img title="Highlighted_product" :src="item.img" :alt="item.name" draggable="false" loading="lazy"  class="w-auto max-h-[70vh] md:max-h-full">
       <div class="flex flex-col p-5">
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
           <h2 class="text-5xl font-medium">{{ item.name }}</h2>
@@ -161,8 +161,8 @@
           </div>
         </div>
         <div class="flex mt-4 md:mt-6 tracking-wide">
-          <a :href="item.link_store" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
-          <a :href="item.link_vivino" target="_blank" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
+          <a :href="item.link_store" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
+          <a :href="item.link_vivino" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
         </div>
       </div>
     </UCarousel>
