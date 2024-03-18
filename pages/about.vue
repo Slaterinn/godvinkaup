@@ -1,5 +1,3 @@
 <template>
-  <div>
-    This is the about site
-  </div>
+  <AboutJumbo />
 </template>
