@@ -52,7 +52,7 @@
           <a href="/beer" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Bjór</a>
         </li>
         <li>
-          <a href="/about" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">About</a>
+          <a href="/about" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Um Góð Vínkaup</a>
         </li>
       </ul>
     </div>
