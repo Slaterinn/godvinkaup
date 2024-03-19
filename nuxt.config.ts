@@ -29,8 +29,10 @@ export default defineNuxtConfig({
             '@nuxtjs/robots',
             'nuxt-icon'],
   nitro: {
-    compressPublicAssets: true,
-  },
+    compressPublicAssets: {
+      brotli: true
+    }
+  }
 });
 
 
