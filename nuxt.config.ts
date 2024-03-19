@@ -27,7 +27,12 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui',
             '@nuxtjs/sitemap',
             '@nuxtjs/robots',
-            'nuxt-icon',],
+            'nuxt-icon'],
+  runtimeConfig: {
+    public: {
+      gtagId: 'G-D0Q8GFPQZ6',
+    }
+  },
   nitro: {
     compressPublicAssets: {
       brotli: true
