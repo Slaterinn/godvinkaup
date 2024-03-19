@@ -28,6 +28,9 @@ export default defineNuxtConfig({
             '@nuxtjs/sitemap',
             '@nuxtjs/robots',
             'nuxt-icon'],
+  nitro: {
+    compressPublicAssets: true,
+  },
 });
 
 
