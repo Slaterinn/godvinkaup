@@ -1,7 +1,7 @@
 <script setup>
 useHead({
   htmlAttrs: {lang: 'is'},
-  link: [{ rel: 'canonical', href: 'https://godvinkaup.is/about' },
+  link: [{ rel: 'canonical', href: 'https://www.godvinkaup.is/about' },
          { rel: 'apple-touch-icon', href: '~/assets/images/touch_icon.png' }]
 })
 

@@ -125,7 +125,7 @@
   </div>
 </div>
 
-<div class="flex justify-center items-center py-20 bg-[#2A2424]">
+<!--<div class="flex justify-center items-center py-20 bg-[#2A2424]">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class="text-4xl md:text-5xl font-teko tracking-wider mb-7  text-[#FDA47E]">
       <h3>Nokkur skemmtileg:</h3>
@@ -167,5 +167,5 @@
       </div>
     </UCarousel>
   </div>
-</div>
+</div> -->
 </template>
