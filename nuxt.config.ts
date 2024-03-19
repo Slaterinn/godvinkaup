@@ -32,7 +32,7 @@ export default defineNuxtConfig({
     compressPublicAssets: {
       brotli: true
     }
-  }
+  },
 });
 
 
