@@ -27,11 +27,11 @@ export default defineNuxtConfig({
   modules: ['@nuxt/ui',
             '@nuxtjs/sitemap',
             '@nuxtjs/robots',
-            'nuxt-icon'],
-  runtimeConfig: {
-    public: {
-      gtagId: 'G-D0Q8GFPQZ6',
-    }
+            'nuxt-icon',
+            'nuxt-gtag'],
+  gtag: {
+    enabled: true,
+    id: 'G-D0Q8GFPQZ6' // Your Google Analytics tracking ID
   },
   nitro: {
     compressPublicAssets: {
