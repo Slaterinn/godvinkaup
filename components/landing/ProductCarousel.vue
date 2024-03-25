@@ -10,7 +10,9 @@
     country: 'Spánn',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25431/',
     link_vivino: 'https://www.vivino.com/US-CA/en/felix-solis-valdepenas-mucho-mas-tinto/w/6266660',
-    rating: '4.2'
+    rating: '4.2',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
   }, {
     name: 'Marlborough sun',
     img: 'https://images.vivino.com/thumbs/HUd1YqCsQjS657o-rAtXJg_pb_x600.png',
@@ -21,7 +23,9 @@
     country: 'Nýja-Sjáland',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=29580/',
     link_vivino: 'https://www.vivino.com/US/en/marlborough-sun-sauvignon-blanc-marlborough/w/1624286',
-    rating: '4.3'
+    rating: '4.3',
+    wineType: 'Hvítvín',
+    wineColor: 'text-[#a9ae03]'
   }, {
     name: 'Torre Mora Scalunera Etna Rosato',
     img: 'https://images.vivino.com/thumbs/SWRDzZF1RWyMhSPMdyAcMA_pb_x600.png',
@@ -32,7 +36,9 @@
     country: 'Ítalía',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25547/',
     link_vivino: 'https://www.vivino.com/US-CA/en/torre-mora-etna-scalunera-etna-rosato-etna/w/6326655',
-    rating: '4.1'
+    rating: '4.1',
+    wineType: 'Rósavín',
+    wineColor: 'text-[#f98e72]'
   }]
 
 
@@ -44,7 +50,9 @@
     seller: 'ÁTVR',
     price: '3.716 kr',
     grapes: 'Negroamaro 100%',
-    country: 'Ítalía'
+    country: 'Ítalía',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
   }, {
     name: 'The Chocolate Block',
     img: 'https://images.vivino.com/thumbs/jQ-ODF_jRpuqCxlRytxYLw_pb_x600.png',
@@ -52,7 +60,9 @@
     seller: 'ÁTVR',
     price: '3.995 kr',
     grapes: 'Syrah 73%, Grenache 11%, Cinsault 8%, Cabernet Sauvignon 7%, Viognier 1%',
-    country: 'Suður-Afríka'
+    country: 'Suður-Afríka',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
   }, {
     name: '2011 Viña Bosconia Tinto Reserva',
     img: 'https://images.vivino.com/thumbs/eDyHmY-EQcG28_Ezlpgq5A_pb_x600.png',
@@ -60,7 +70,9 @@
     seller: 'Sante',
     price: '4.900 kr',
     grapes: 'Tempranillo 80%, Garnacha 15%, Mazuelo 3%, Graciano 2%.',
-    country: 'Spánn'
+    country: 'Spánn',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
   }
   , {
     name: '2011 Viña Bosconia Tinto Reserva',
@@ -69,7 +81,9 @@
     seller: 'Sante',
     price: '4.900 kr',
     grapes: 'Tempranillo 80%, Garnacha 15%, Mazuelo 3%, Graciano 2%.',
-    country: 'Spánn'
+    country: 'Spánn',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
   }]
 
   const props = defineProps({
@@ -83,13 +97,14 @@
 <div class="flex justify-center items-center py-20">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class=" font-teko tracking-wider mb-7 text-[#FDA47E]">
-      <h3 class="text-4xl md:text-5xl">Bestu kaupin:</h3>
+      <h3 class="text-4xl md:text-5xl">Nokkur af bestu kaupunum:</h3>
       <p>Hæstu einkunnir miðað við verð af hverri víntegund</p>
     </div>
     <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
       <img title="Highlighted_product" :src="item.img" :alt="item.name" draggable="false" loading="lazy" class="w-auto max-h-[70vh] md:max-h-full">
       <div class="flex flex-col p-5">
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
+          <p class="text-xl" :class="`${item.wineColor}`">{{item.wineType}}</p>
           <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
           <div>
             <div>
