@@ -2,7 +2,7 @@
 useHead({
   htmlAttrs: {lang: 'is'},
   link: [{ rel: 'canonical', href: 'https://godvinkaup.is/beer' },
-         { rel: 'apple-touch-icon', href: '~/assets/images/touch_icon.png' }]
+         { rel: 'apple-touch-icon', href: '~/assets/images/godvinkaup_round.png' }]
 })
 
 useSeoMeta({
