@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-  const items1 = [{
+const items1 = [{
     name: 'Mucho mas tinto',
     img: 'https://images.vivino.com/thumbs/nMRl6FutRX26zFRR1iqtqQ_pb_x600.png',
     description: 'Ávaxtaríkt en samt djúprautt vín frá fjölskyldufyrirtækinu Félix Solís á Spáni. Þetta vín nær jafnvægi á milli þess að vera þurrt og sætt en það má búast við því að finna keim af vanillu, eik og tóbaki auk þess hefur það sætan keim af rauðum kirsuberjum og plómu. Allt mjög einkennandi fyrir Tempranillo þrúguna en þarna er búið að blanda þeim saman við Syrah sem svona gefur því aukið flækjustig og dekkri lit.',
@@ -14,32 +14,57 @@
     wineType: 'Rauðvín',
     wineColor: 'text-[#a82548]'
   }, {
-    name: 'Marlborough sun',
-    img: 'https://images.vivino.com/thumbs/HUd1YqCsQjS657o-rAtXJg_pb_x600.png',
-    description: 'Þurrt, frekar létt og súrt Sauvignon Blanc hvítvín frá Nýja-Sjálandi sem hefur ferskan ávaxtailm og bragð af sítrus, greip og ástaraldin. Parast vel með skelfisk og grænmetisréttum.',
+    name: 'Masso Antico Primitivo',
+    img: 'https://images.vivino.com/thumbs/q8BUc8n8Qkivs11SxrXZqg_pb_x600.png',
+    description: 'Búið til með appassimento þurrk-aðferðinni en það skilar sér þéttu víni dökkum lit og meira afgerandi bragði og ilm af svörtum skógarávöxtum og reyk. Ertu að fara að grilla í sól og 5 stiga hita? Gríptu þá þessa með og paraðu með grillkjötinu og þú verður ekki fyrir vonbrigðum!',
+    seller: 'ÁTVR',
+    price: '2.590 kr',
+    grapes: 'Primitivo',
+    country: 'Ítalía - Puglia',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=23603',
+    link_vivino: 'https://www.vivino.com/US-CA/en/masso-antico-appassito-primitivo/w/5418496',
+    rating: '4.1',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
+  }, {
+    name: 'Big Boys Zinfandel',
+    img: 'https://images.vivino.com/thumbs/CWH9WejMQVOPH53hnaOFMw_pb_x600.png',
+    description: 'Á flöskumiðanum eru stórir strákar en þetta vín er ekki bara fyrir stóra stráka heldur alla. Silkimjúkt rauðvín þar sem eik blandast vel við bragð af rúsínum, súkkulaði/kaffi og lakkrís. Auðdrekkanlegt en í senn nokkuð flókið vín sem parast mjög vel pasta- og kjötréttum af ýmsu tagi.',
     seller: 'ÁTVR',
     price: '2.799 kr',
-    grapes: 'Sauvignon Blanc',
-    country: 'Nýja-Sjáland',
-    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=29580/',
-    link_vivino: 'https://www.vivino.com/US/en/marlborough-sun-sauvignon-blanc-marlborough/w/1624286',
-    rating: '4.3',
-    wineType: 'Hvítvín',
-    wineColor: 'text-[#a9ae03]'
-  }, {
-    name: 'Torre Mora Scalunera Etna Rosato',
-    img: 'https://images.vivino.com/thumbs/SWRDzZF1RWyMhSPMdyAcMA_pb_x600.png',
-    description: 'Nerello Mascalese þrúgan er ræktuð í hlíðum sisiliska eldfjallsins Etna og er stundum líkt við Pinot Noir. Hún býður upp á ávaxtabragð, t.d. jarðaber og kirsuber og er frekar ljós að lit með nokkra sýru. Það væri sniðugt að segja að óvænt hlýja vínsins væri endurspeglun á eldfjallinu sem þrúgan er ræktuð við en það væri aðeins of lúðalegt.',
-    seller: 'ÁTVR',
-    price: '3.499 kr',
-    grapes: 'Nerello Mascalese',
-    country: 'Ítalía',
-    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25547/',
-    link_vivino: 'https://www.vivino.com/US-CA/en/torre-mora-etna-scalunera-etna-rosato-etna/w/6326655',
+    grapes: 'Zinfandel',
+    country: 'Ítalía - Puglia',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=24325',
+    link_vivino: 'https://www.vivino.com/US-CA/en/big-boys-zinfandel/w/4401105',
     rating: '4.1',
-    wineType: 'Rósavín',
-    wineColor: 'text-[#f98e72]'
-  }]
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
+  }, {
+    name: 'Silk & Spice Red Blend',
+    img: 'https://images.vivino.com/thumbs/uShQu12ZReOajbocNCabXQ_pb_x600.png',
+    description: 'Ávaxtaríkt vín án þess þó að vera mjög sætt, heldur frekar í þurrari kantinum. Þetta er djarft vín með auðkennandi bragði af dökkum áxöxtum sem vega salt á móti þéttri áferð. Í hvert skipti sem þú tekur sopa þá finnurðu nýtt kryddbragð en þar má einkenna allt frá svörtum pipar yfir í appeslínubörk og kanil. Ekki verður það verra ef þú geymir það aðeins en það er erfitt að sitja á því eftir að hafa smakkað.',
+    seller: 'ÁTVR',
+    price: '2.599 kr',
+    grapes: '40% Touriga Nacional, 20% Alicante Bouchet, 20% Baga, 20% Syrah',
+    country: 'Portúgal',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25197',
+    link_vivino: 'https://www.vivino.com/US-CA/en/silk-spice-red-blend/w/4843593',
+    rating: '4.1',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'
+  }, {
+    name: 'Day One Carmenere',
+    img: 'https://images.vivino.com/thumbs/el1n78g-RgOjLEheat2MRA_pb_x600.png',
+    description: 'Gott Carmenere vín á góðu verði! Þroskaðir rauðir áxextir syngja hér forsönginn með bland af jurtatónum í bakröddum en það má jafnvel finna þarna aðeins keim af súkkulaði og kaffi. Þrátt fyrir þessa flóknu lýsingu er þetta vín nokkuð þægilegt og auðvelt að kynnast því.',
+    seller: 'ÁTVR',
+    price: '2.699 kr',
+    grapes: 'Carmenere',
+    country: 'Chile- Colchagua',
+    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=28972',
+    link_vivino: 'https://www.vivino.com/US-CA/en/montgras-day-one-carmenere/w/9823094',
+    rating: '4.0',
+    wineType: 'Rauðvín',
+    wineColor: 'text-[#a82548]'}]
 
 
 
@@ -76,7 +101,7 @@
   }
   , {
     name: '2011 Viña Bosconia Tinto Reserva',
-    img: 'https://images.vivino.com/thumbs/eDyHmY-EQcG28_Ezlpgq5A_pb_x600.png',
+    img: 'https://images.vivino.com/thumbs/el1n78g-RgOjLEheat2MRA_pb_x600.png',
     description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s.',
     seller: 'Sante',
     price: '4.900 kr',
@@ -97,8 +122,8 @@
 <div class="flex justify-center items-center py-20">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class=" font-teko tracking-wider mb-7 text-[#FDA47E]">
-      <h3 class="text-4xl md:text-5xl">Nokkur af bestu kaupunum:</h3>
-      <p>Hæstu einkunnir miðað við verð af hverri víntegund</p>
+      <h3 class="text-4xl md:text-5xl">Frábær kaup undir 3.000 kr:</h3>
+      <p>Aðgengileg vín á góðu verði sem fást víða.</p>
     </div>
     <UCarousel v-slot="{ item }" :items="items1" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
       <img title="Highlighted_product" :src="item.img" :alt="item.name" draggable="false" loading="lazy" class="w-auto max-h-[70vh] md:max-h-full">
