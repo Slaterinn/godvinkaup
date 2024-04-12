@@ -1,9 +1,9 @@
 <script setup lang="ts">
 
 const items1 = [{
-    name: 'Mucho mas tinto',
+  name: 'Mucho mas tinto',
     img: 'https://images.vivino.com/thumbs/nMRl6FutRX26zFRR1iqtqQ_pb_x600.png',
-    description: 'Ávaxtaríkt en samt djúprautt vín frá fjölskyldufyrirtækinu Félix Solís á Spáni. Þetta vín nær jafnvægi á milli þess að vera þurrt og sætt en það má búast við því að finna keim af vanillu, eik og tóbaki auk þess hefur það sætan keim af rauðum kirsuberjum og plómu. Allt mjög einkennandi fyrir Tempranillo þrúguna en þarna er búið að blanda þeim saman við Syrah sem svona gefur því aukið flækjustig og dekkri lit.',
+    description: 'Ávaxtaríkt en djúprautt vín frá fjölskyldufyrirtækinu Félix Solís á Spáni. Þetta vín nær jafnvægi á milli þess að vera þurrt og sætt en það má búast við því að finna keim af vanillu, eik og tóbaki auk þess hefur það sætan keim af rauðum ávöxtum. Allt mjög einkennandi fyrir Tempranillo þrúguna en í bland við Syrah fær það aukið flækjustig og dekkri lit.',
     seller: 'ÁTVR',
     price: '2.599 kr',
     grapes: 'Shiraz/Syrah, Tempranillo',
@@ -16,7 +16,7 @@ const items1 = [{
   }, {
     name: 'Masso Antico Primitivo',
     img: 'https://images.vivino.com/thumbs/q8BUc8n8Qkivs11SxrXZqg_pb_x600.png',
-    description: 'Búið til með appassimento þurrk-aðferðinni en það skilar sér þéttu víni, dökkum lit og meira afgerandi bragði og ilm af svörtum skógarávöxtum og reyk. Ertu að fara að grilla í sól og 5 stiga hita? Gríptu þá þessa með og paraðu með grillkjötinu og þú verður ekki fyrir vonbrigðum!',
+    description: 'Búið til með appassimento þurrk-aðferðinni en það skilar sér þéttu Puglia víni, dökkum lit og meira afgerandi bragði og ilm af svörtum skógarávöxtum og reyk. Ertu að fara að grilla í sól og 5 stiga hita? Gríptu þá þessa með og paraðu með grillkjötinu og þú verður ekki fyrir vonbrigðum!',
     seller: 'ÁTVR',
     price: '2.590 kr',
     grapes: 'Primitivo',
@@ -29,7 +29,7 @@ const items1 = [{
   }, {
     name: 'Big Boys Zinfandel',
     img: 'https://images.vivino.com/thumbs/CWH9WejMQVOPH53hnaOFMw_pb_x600.png',
-    description: 'Á flöskumiðanum eru stórir strákar en þetta vín er ekki bara fyrir stóra stráka heldur alla. Silkimjúkt rauðvín þar sem eik blandast vel við bragð af rúsínum, súkkulaði/kaffi og lakkrís. Auðdrekkanlegt en í senn nokkuð flókið vín sem parast mjög vel pasta- og kjötréttum af ýmsu tagi.',
+    description: 'Á flöskumiðanum eru stórir strákar en þetta vín er ekki bara fyrir stóra stráka heldur alla. Silkimjúkt ítalskt rauðvín frá Puglia þar sem eik blandast vel við bragð af rúsínum, súkkulaði/kaffi og lakkrís. Auðdrekkanlegt en í senn nokkuð flókið vín sem parast mjög vel pasta- og kjötréttum af ýmsu tagi.',
     seller: 'ÁTVR',
     price: '2.799 kr',
     grapes: 'Zinfandel',
@@ -42,7 +42,7 @@ const items1 = [{
   }, {
     name: 'Silk & Spice Red Blend',
     img: 'https://images.vivino.com/thumbs/uShQu12ZReOajbocNCabXQ_pb_x600.png',
-    description: 'Ávaxtaríkt vín án þess þó að vera mjög sætt, heldur frekar í þurrari kantinum. Þetta er djarft vín með auðkennandi bragði af dökkum áxöxtum sem vega salt á móti þéttri áferð. Í hvert skipti sem þú tekur sopa þá finnurðu nýtt kryddbragð en þar má einkenna allt frá svörtum pipar yfir í appeslínubörk og kanil. Ekki verður það verra ef þú geymir það aðeins en það er erfitt að sitja á því eftir að hafa smakkað.',
+    description: 'Ávaxtaríkt vín án þess þó að vera mjög sætt, heldur frekar í þurrari kantinum. Þetta er djarft portúgalskt vín með auðkennandi bragði af dökkum áxöxtum sem vega salt á móti þéttri áferð. Í hvert skipti sem þú tekur sopa þá finnurðu nýtt kryddbragð en þar má einkenna allt frá svörtum pipar yfir í appeslínubörk og kanil. Ekki verður það verra ef þú geymir það aðeins en það er erfitt að sitja á því eftir að hafa smakkað.',
     seller: 'ÁTVR',
     price: '2.599 kr',
     grapes: '40% Touriga Nacional, 20% Alicante Bouchet, 20% Baga, 20% Syrah',
@@ -55,7 +55,7 @@ const items1 = [{
   }, {
     name: 'Day One Carmenere',
     img: 'https://images.vivino.com/thumbs/el1n78g-RgOjLEheat2MRA_pb_x600.png',
-    description: 'Gott Carmenere vín á góðu verði! Þroskaðir rauðir áxextir syngja hér forsönginn með bland af jurtatónum í bakröddum en það má jafnvel finna þarna aðeins keim af súkkulaði og kaffi. Þrátt fyrir þessa flóknu lýsingu er þetta vín nokkuð þægilegt og auðvelt að kynnast því.',
+    description: 'Gott Carmenere vín frá Chile á góðu verði! Þroskaðir rauðir áxextir syngja hér forsönginn með bland af jurtatónum í bakröddum en það má jafnvel finna þarna aðeins keim af súkkulaði og kaffi. Þrátt fyrir þessa flóknu lýsingu er þetta vín nokkuð þægilegt og auðvelt að kynnast því.',
     seller: 'ÁTVR',
     price: '2.699 kr',
     grapes: 'Carmenere',
@@ -71,7 +71,7 @@ const items1 = [{
   const items2 = [{
     name: 'Antieri susumaniello',
     img: 'https://images.vivino.com/thumbs/-cl2YA2cSAO65wUQPKsmuw_pb_x600.png',
-    description: 'Kröftugt og ríkt rautt vín sem ber með sér kraftmikinn ilm og bragð og kryddaðri plómusultu með negul og tóbaki. Þétt ávaxtabragðið fær faðmlag frá fíngerðu tanníni og kanill kyssir það bless. Þetta er eiginlega rosalegt vín og það verður að fá að anda í góðan tíma til að losa um epískt bragðið.',
+    description: 'Kröftugt og ríkt rautt Puglia-vín sem ber með sér kraftmikinn ilm og bragð og kryddaðri plómusultu með negul og tóbaki. Þétt ávaxtabragðið fær faðmlag frá fíngerðu tanníni og kanill kyssir það bless. Þetta er eiginlega rosalegt vín og það verður að fá að anda í góðan tíma til að losa um epískt bragðið.',
     seller: 'ÁTVR',
     price: '4.494 kr',
     grapes: 'Susumaniello',
@@ -84,7 +84,7 @@ const items1 = [{
   }, {
     name: 'Reserva XR',
     img: 'https://images.vivino.com/thumbs/B16FOepaS1aO5WPtys9Hdg_pb_x600.png',
-    description: 'Djúpkirsuberjarautt vín með skærum blæ á brún. Ekki ósvipað góðum Bordeaux-vínum er þetta vín örlítið lokað til að byrja með en opnar sig þegar þú færð að kynnast því. Reyktur og kryddaður ilmur af múskati og kanil kemur fljótt í ljós ásamt lakkrís og bláberjum. Í lokin er ekki fráleitt að finna snefil af balsamik. Vín sem þú verður hreinlega að prófa!',
+    description: 'Djúpkirsuberjarautt Rioja vín með skærum blæ á brún. Ekki ósvipað góðum Bordeaux-vínum er þetta vín örlítið lokað til að byrja með en opnar sig þegar þú færð að kynnast því. Reyktur og kryddaður ilmur af múskati og kanil kemur fljótt í ljós ásamt lakkrís og bláberjum. Í lokin er ekki fráleitt að finna snefil af balsamik. Vín sem þú verður hreinlega að prófa!',
     seller: 'ÁTVR',
     price: '4.999 kr',
     grapes: 'Tempranillo, Graciano',
@@ -97,7 +97,7 @@ const items1 = [{
   }, {
     name: 'Cornas Hypsos',
     img: 'https://images.vivino.com/thumbs/m8amIn1kQ5CGLLUXMQEOxQ_pb_x600.png',
-    description: 'Dökkur, ógagnsær, næstum svartrauður litur tekur á sig fjólubláan blæ meðan það er ungt en breytist í gulbrúna tóna með aldrinum. Vínið er sannkölluð sprenging af rauðum ávöxtum í nefi en býður uppá fínlegan blóma- og ákafan piparkeim. Ég get fátt fleira útskýrt - kauptu þér flösku hjá Sante, smakkaðu, gefðu vinum og njóttu.',
+    description: 'Dökkur, ógagnsær, næstum svartrauður litur tekur á sig fjólubláan blæ meðan það er ungt en breytist í gulbrúna tóna með aldrinum. Þetta franska vín frá Rhone er sannkölluð sprenging af rauðum ávöxtum í nefi en býður uppá fínlegan blóma- og ákafan piparkeim. Ég get fátt fleira útskýrt - kauptu þér flösku hjá Sante, smakkaðu, gefðu vinum og njóttu.',
     seller: 'Sante',
     price: '3.800 kr',
     grapes: 'Syrah',
@@ -111,7 +111,7 @@ const items1 = [{
   , {
     name: 'The Bernard Series Pinotage',
     img: 'https://images.vivino.com/thumbs/W_Aae_RVR8uMSSLNkq3plw_pb_x600.png',
-    description: 'Settu nefið að glasinu og það grípur þig afbragðsilmur af sólberjum, hindberjum og kirsuberjum. Hallaðu þér aftur og hugsaðu hvað lífið er gott. Fáðu þér sopa og finndu fullt, þurrt og hóflega sýrt vínið leika um munninn. Kyngdu svo og mundu að þetta er bara vín og það eru allir að horfa á þig. En þetta er frábært vín!',
+    description: 'Settu nefið að glasinu og það grípur þig afbragðsilmur af sólberjum, hindberjum og kirsuberjum. Hallaðu þér aftur og hugsaðu hvað lífið er gott. Fáðu þér sopa og finndu fullt, þurrt og hóflega sýrt vínið leika um munninn. Kyngdu svo og mundu að þetta er bara vín og það eru allir að horfa á þig. En þetta er frábært vín frá Suður-Afríku!',
     seller: 'ÁTVR',
     price: '3.999 kr',
     grapes: 'Pinotage',
@@ -155,14 +155,6 @@ const items1 = [{
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
           <p class="text-xl" :class="`${item.wineColor}`">{{item.wineType}}</p>
           <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
-          <div>
-            <div>
-              <span class="text-md sm:text-lg">{{ item.country }}</span>
-            </div>
-            <div>
-              <span class="text-md sm:text-lg text-[#7a7a7a]">LAND</span>
-            </div>
-          </div>
           <div>
             <div>
               <span class="text-md sm:text-lg">{{ item.description }}</span>
@@ -209,14 +201,6 @@ const items1 = [{
         <div class="grid grid-cols-1 gap-3 lg:gap-5">
           <p class="text-xl" :class="`${item.wineColor}`">{{item.wineType}}</p>
           <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
-          <div>
-            <div>
-              <span class="text-md sm:text-lg">{{ item.country }}</span>
-            </div>
-            <div>
-              <span class="text-md sm:text-lg text-[#7a7a7a]">LAND</span>
-            </div>
-          </div>
           <div>
             <div>
               <span class="text-md sm:text-lg">{{ item.description }}</span>
