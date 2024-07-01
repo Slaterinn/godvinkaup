@@ -94,8 +94,8 @@ const resetFilters = () => {
 <template>
   <!-- Modal toggle -->
 <div class="mx-auto max-w-3xl md:w-full font-teko ">
-  <button data-modal-target="wine-filters" data-modal-toggle="wine-filters" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#A48B8A] focus:ring-4 focus:outline-none focus:ring-black-200  dark:hover:bg-[#A48B8A] dark:focus:ring-black-700 ms-3" type="button">
-    Síur
+  <button data-modal-target="wine-filters" data-modal-toggle="wine-filters" class="inline-flex items-center px-4 py-2 text-md tracking-wide font-medium text-center text-white bg-[#625A5A] rounded-lg hover:bg-[#A48B8A] focus:ring-4 focus:outline-none focus:ring-black-200  dark:hover:bg-[#A48B8A] dark:focus:ring-black-700 ms-3" type="button">
+    Þrengja leit
   </button>
 </div>
 <div id="wine-filters" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full font-montserrat">
