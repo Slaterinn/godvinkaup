@@ -40,61 +40,61 @@ handleWineColor();
         <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
           <!-- Image column -->
           <div class="flex-shrink-0 col-span-1">
-            <img :src="props.wine_image" alt="Wine Image" class="w-full md:w-[150px] h-[250px] object-cover" />
+            <img :src="props.wine_image" :href="props.link_vivino" alt="Wine Image" class="w-full md:w-[150px] h-[250px] object-cover" />
           </div>
           <!-- Card details -->
           <div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-2">
             <div>
               <div>
-                <span class="text-md xl:text-2xl">{{ wine.producer }}</span>
+                <span class="text-md md:text-2xl">{{ wine.producer }}</span>
               </div>
               <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">FRAMLEIÐANDI</span>
-              </div>
-            </div>
-
-            <div>
-              <div>
-                <span class="text-md xl:text-2xl">{{ parseInt(wine.price).toLocaleString("de-DE") }}</span>
-              </div>
-              <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">VERÐ</span>
+                <span class="text-md md:text-lg text-[#7a7a7a]">FRAMLEIÐANDI</span>
               </div>
             </div>
 
             <div>
               <div>
-                <span class="text-md xl:text-2xl">{{ wine.country }}</span>
+                <span class="text-md md:text-2xl">{{ parseInt(wine.price).toLocaleString("de-DE") }}</span>
               </div>
               <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">LAND</span>
+                <span class="text-md md:text-lg text-[#7a7a7a]">VERÐ</span>
               </div>
             </div>
 
             <div>
               <div>
-                <span class="text-md xl:text-2xl">{{ wine.rating }}</span>
+                <span class="text-md md:text-2xl">{{ wine.country }}</span>
               </div>
               <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">EINKUNN</span>
+                <span class="text-md md:text-lg text-[#7a7a7a]">LAND</span>
+              </div>
+            </div>
+
+            <div>
+              <div>
+                <span class="text-md md:text-2xl">{{ wine.rating }}</span>
+              </div>
+              <div>
+                <span class="text-md md:text-lg text-[#7a7a7a]">EINKUNN</span>
               </div>
             </div>
 
             <div v-if="wine.taste_group">
               <div>
-                <span class="text-md xl:text-2xl">{{ wine.taste_group }}</span>
+                <span class="text-md md:text-2xl">{{ wine.taste_group }}</span>
               </div>
               <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">BRAGÐFLOKKUR</span>
+                <span class="text-md md:text-lg text-[#7a7a7a]">BRAGÐFLOKKUR</span>
               </div>
             </div>
 
             <div v-if="wine.grapes !=0">
               <div>
-                <span class="text-md xl:text-2xl">{{ wine.grapes }}</span>
+                <span class="text-md md:text-2xl">{{ wine.grapes }}</span>
               </div>
               <div>
-                <span class="text-md xl:text-lg text-[#7a7a7a]">ÞRÚGUR</span>
+                <span class="text-md md:text-lg text-[#7a7a7a]">ÞRÚGUR</span>
               </div>
             </div>
           </div>

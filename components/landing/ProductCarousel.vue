@@ -139,8 +139,8 @@ const items1 = [{
   wines: Array
 })
 
-
 </script>
+
 
 <template>
 <div class="flex justify-center items-center py-20">
