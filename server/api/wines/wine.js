@@ -3,7 +3,7 @@ import wines from "~/data/wines_json.json";
 
 
 export default defineEventHandler((event) => {
-  const {search, category, minPrice, maxPrice} = getQuery(event);
+  const {search, category, minPrice, maxPrice, isOrganic} = getQuery(event);
   
   
 
@@ -47,6 +47,12 @@ export default defineEventHandler((event) => {
   if(maxPrice) {
     filteredWines = filteredWines.filter((wine) => {
       return parseInt(wine.price) <= parseInt(maxPrice)
+    })
+  } 
+
+  if(isOrganic) {
+    filteredWines = filteredWines.filter((wine) => {
+      return wine.is_organic === isOrganic || isOrganic === 'Any'
     })
   } 
   

@@ -62,7 +62,7 @@ handleWineColor();
               </div>
             </div>
 
-            <div>
+            <div v-if="wine.country && wine.country!= 'N/F'">
               <div>
                 <span class="text-md md:text-2xl">{{ wine.country }}</span>
               </div>
@@ -80,7 +80,7 @@ handleWineColor();
               </div>
             </div>
 
-            <div v-if="wine.taste_group">
+            <div v-if="wine.taste_group && wine.taste_group!= 'N/F'">
               <div>
                 <span class="text-md md:text-2xl">{{ wine.taste_group }}</span>
               </div>

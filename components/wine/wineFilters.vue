@@ -7,7 +7,8 @@ const searchInput = ref("");
 const wineAttributes = ref({
   category: "Allar",
   min: "",
-  max: ""
+  max: "",
+  isOrganic : "Öll vín"
 });
 
 // Mapping object to convert category values
@@ -23,6 +24,12 @@ function ReverseMapping(object, value) {
   return Object.keys(object).find(key =>
     object[key] === value);
 }
+
+// Mapping object to convert category values
+const isOrganicMapping = {
+  "Öll vín": "Any",
+  "Lífræn vín": "true"
+};
 
 // Update wineAttributes with query parameters on component mount
 onMounted(() => {
@@ -40,6 +47,11 @@ onMounted(() => {
 
   if(query.search){
     searchInput.value = query.search;
+  }
+
+  if (query.category) {
+    //Endurmappa Enskt vínheiti í íslensk til að setja í ref gildið.
+    wineAttributes.value.isOrganic = ReverseMapping(isOrganicMapping, query.isOrganic);
   }
   
 });
@@ -63,6 +75,8 @@ const onChangeFilter = () => {
     queryParams.search = searchInput.value.trim();
   };
   
+  // Map displayed category value to query parameter value
+  queryParams.isOrganic = isOrganicMapping[wineAttributes.value.isOrganic]
 
 
   console.log(queryParams)
@@ -80,7 +94,8 @@ const resetFilters = () => {
   wineAttributes.value.min = "",
   wineAttributes.value.max = "",
   wineAttributes.value.category = "Allar",
-  searchInput.value=""
+  searchInput.value="",
+  wineAttributes.value.isOrganic = "Öll vín"
 };
 
 
@@ -104,6 +119,7 @@ const resetFilters = () => {
       <div class="rounded-xl p-6">
         <h2 class=" text-xl font-bold">Þrengdu niðurstöðurnar</h2>
         <p class="mt-1 text-sm text-[#7a7a7a]">Prófaðu síurnar. Með leitinni er hægt að leita að ýmsum eiginleikum, eins og nafni, árgerð og landi.</p>
+        <!-- Hérna er fyrsta röð af filterum -->
         <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div class="flex flex-col">
             <label for="searchAll" class="text-stone-600 text-sm font-medium">Leit</label>
@@ -130,6 +146,14 @@ const resetFilters = () => {
           <div class="flex flex-col">
             <label for="winePriceMin" class="text-stone-600 text-sm font-medium">Hámarksverð</label>
             <input type="number" id="winePriceMax" placeholder="Hámarksverð" v-model="wineAttributes.max" class="mt-2 block w-full rounded-md text-[#3E3737] placeholder-gray-400 bg-gray-100 border border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50" />
+          </div>
+
+          <div class="flex flex-col">
+            <label for="isOrganic" class="text-stone-600 text-sm font-medium">Lífrænt</label>
+            <select id="isOrganic" v-model="wineAttributes.isOrganic" class="mt-2 block w-full rounded-md text-[#3E3737] border bg-gray-100 border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+              <option>Öll vín</option>
+              <option>Lífræn vín</option>
+            </select>
           </div>
         </div>
 

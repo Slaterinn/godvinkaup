@@ -21,12 +21,14 @@ const maxPrice  = computed(() => route.query.maxPrice)
 const minPrice  = computed(() => route.query.minPrice)
 const category  = computed(() => route.query.category)
 const search    = computed(() => route.query.search)
+const isOrganic = computed(() => route.query.isOrganic)
 
 const {data: wines, refresh} = await useFetchWines({
   minPrice,
   maxPrice,
   category,
   search,
+  isOrganic
 });
 
 watch(
