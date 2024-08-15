@@ -3,7 +3,7 @@
   <div class="pt-[150px] pb-[100px] mx-auto max-w-screen-xl text-center px-4 sm:px-16 lg:px-48">
     <h1 class="mb-8 text-4xl font-teko tracking-widest  md:text-5xl lg:text-6xl text-[#FDA47E] dark:text-[#FDA47E] font-bold">Hvers vegna góð vínkaup?</h1>
     <p class="mb-8 text-md font-montserrat text-[#FDA47E] lg:text-xl dark:text-[#FDA47E] text-justify">
-      Hugmyndin að góðum vínkaupum er sprottin upp í einhverri af mörgum ferðum í vínuðina að leita að góðum bjór og góðu víni til að kaupa. þá fór ég að skoða möguleikann á því að búa til gagnasett sem stillir upp vörum eftir einkunn svo ég gæti á snöggan hátt fundið vín eða bjór sem mig langaði að smakka. Mér fannst þetta svo gagnlegt að ég þurfti að setja upp síðu og vona að þetta geti líka gagnast þér.
+      Hugmyndin að góðum vínkaupum er sprottin upp í einhverri af mörgum ferðum í ÁTVR að leita að góðum bjór og góðu víni til að kaupa. Þá fór ég að skoða möguleikann á því að búa til gagnasett sem stillir upp vörum eftir einkunn svo ég gæti á snöggan hátt fundið vín eða bjór sem mig langaði að smakka. Mér fannst þetta svo gagnlegt að ég þurfti að setja upp síðu og vona að þetta geti líka gagnast þér.
     </p>
   </div>
   <div class="columns-1 md:columns-2 px-4 sm:px-16 lg:px-48 space-x-1.5">

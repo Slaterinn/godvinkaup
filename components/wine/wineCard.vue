@@ -29,6 +29,16 @@ const handleWineColor = () =>{
 };
 handleWineColor();
 
+// Function to convert recommendation to rating
+const gradeRecommendation = (recommendation) => {
+  if (recommendation >= 0.95) return 'Framúrskarandi kaup';
+  if (recommendation >= 0.85) return 'Frábær kaup';
+  if (recommendation >= 0.75) return 'Mjög góð kaup';
+  if (recommendation >= 0.65) return 'Góð kaup';
+};
+
+// Compute the rating based on the recommendation
+const wineRating = computed(() => gradeRecommendation(props.wine.recommendation));
 </script>
 
 <template>
@@ -36,7 +46,22 @@ handleWineColor();
     <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737] ">
       <div class="flex flex-col p-7 font-teko">
         <p class="text-xl" :class="`${wineColor}`">{{wineType}}</p>
-        <h2 class="mb-10 text-5xl font-medium">{{ wine.wine_name }}</h2>
+        <h2 class="mb-3 text-5xl font-medium">{{ wine.wine_name }}</h2>
+        <div class="flex flex-row">
+          <div v-if="wineRating == 'Framúrskarandi kaup'">
+            <img src="~/assets/images/TwemojiPinchedFingers.png" class="w-[25px] h-[25px] object-cover">
+          </div>
+          <div v-else-if="wineRating == 'Frábær kaup'">
+            <img src="~/assets/images/TwemojiStarStruck.png" class="w-[25px] h-[25px] object-cover">
+          </div>
+          <div v-else-if="wineRating == 'Mjög góð kaup'">
+            <img src="~/assets/images/TwemojiGrinningFace.png" class="w-[25px] h-[25px] object-cover">
+          </div>
+          <div v-else-if="wineRating == 'Góð kaup'">
+            <img src="~/assets/images/TwemojiSlightlySmilingFace.png" class="w-[25px] h-[25px] object-cover">
+          </div>
+          <div><p class="mb-10 mx-3 text-2xl font-medium text-[#3E3737]">{{ wineRating }} </p></div>
+        </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
           <!-- Image column -->
           <div class="flex-shrink-0 col-span-1">

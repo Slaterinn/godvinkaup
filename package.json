@@ -13,6 +13,7 @@
     "heroku-postbuild": "npm run build"
   },
   "devDependencies": {
+    "@nuxt/image": "^1.7.0",
     "autoprefixer": "^10.4.17",
     "gh-pages": "^6.1.1",
     "nuxt": "^3.8.2",
@@ -24,6 +25,7 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@iconify-json/twemoji": "^1.1.16",
     "@nuxt/ui": "^2.13.0",
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^5.1.2"

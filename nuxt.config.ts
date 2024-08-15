@@ -1,4 +1,3 @@
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   app: {
@@ -24,11 +23,14 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/ui',
-            '@nuxtjs/sitemap',
-            '@nuxtjs/robots',
-            'nuxt-icon',
-            'nuxt-gtag'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
+    'nuxt-icon',
+    'nuxt-gtag',
+    "@nuxt/image"
+  ],
   gtag: {
     enabled: true,
     id: 'G-D0Q8GFPQZ6' // Your Google Analytics tracking ID
@@ -40,5 +42,3 @@ export default defineNuxtConfig({
   },
   
 });
-
-

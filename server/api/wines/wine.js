@@ -57,7 +57,7 @@ export default defineEventHandler((event) => {
   } 
   
   filteredWines.sort(function(a, b){
-    return (b.rating) - (a.rating);
+    return (b.recommendation) - (a.recommendation);
   });
 
   //SKila bara ákveðnum fjölda lína
