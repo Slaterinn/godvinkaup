@@ -49,16 +49,16 @@ const wineRating = computed(() => gradeRecommendation(props.wine.recommendation)
         <h2 class="mb-3 text-5xl font-medium">{{ wine.wine_name }}</h2>
         <div class="flex flex-row">
           <div v-if="wineRating == 'Framúrskarandi kaup'">
-            <img src="~/assets/images/TwemojiPinchedFingers.png" class="w-[25px] h-[25px] object-cover">
+            <img src="~/assets/images/twemoji--pinched-fingers.png" class="w-[25px] h-[25px] object-cover">
           </div>
           <div v-else-if="wineRating == 'Frábær kaup'">
-            <img src="~/assets/images/TwemojiStarStruck.png" class="w-[25px] h-[25px] object-cover">
+            <img src="~/assets/images/twemoji--star-struck.png" class="w-[25px] h-[25px] object-cover">
           </div>
           <div v-else-if="wineRating == 'Mjög góð kaup'">
-            <img src="~/assets/images/TwemojiGrinningFace.png" class="w-[25px] h-[25px] object-cover">
+            <img src="~/assets/images/twemoji--grinning-face-with-big-eyes.png" class="w-[25px] h-[25px] object-cover">
           </div>
           <div v-else-if="wineRating == 'Góð kaup'">
-            <img src="~/assets/images/TwemojiSlightlySmilingFace.png" class="w-[25px] h-[25px] object-cover">
+            <img src="~/assets/images/twemoji--slightly-smiling-face.png" class="w-[25px] h-[25px] object-cover">
           </div>
           <div><p class="mb-10 mx-3 text-2xl font-medium text-[#3E3737]">{{ wineRating }} </p></div>
         </div>
