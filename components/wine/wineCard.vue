@@ -60,7 +60,7 @@ const wineRating = computed(() => gradeRecommendation(props.wine.recommendation)
           <div v-else-if="wineRating == 'Góð kaup'">
             <img src="~/assets/images/twemoji--slightly-smiling-face.png" class="w-[25px] h-[25px] object-cover">
           </div>
-          <div><p class="mb-10 mx-3 text-2xl font-medium text-[#3E3737]">{{ wineRating }} </p></div>
+          <div><p class="mb-5 mx-3 text-2xl font-medium text-[#3E3737]">{{ wineRating }} </p></div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-3 gap-1">
           <!-- Image column -->
