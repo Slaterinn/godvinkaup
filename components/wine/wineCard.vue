@@ -30,15 +30,16 @@ const handleWineColor = () =>{
 handleWineColor();
 
 // Function to convert recommendation to rating
-const gradeRecommendation = (recommendation) => {
+const gradeRecommendation = (recommendation, rating) => {
   if (recommendation >= 0.95) return 'Framúrskarandi kaup';
   if (recommendation >= 0.85) return 'Frábær kaup';
   if (recommendation >= 0.75) return 'Mjög góð kaup';
   if (recommendation >= 0.65) return 'Góð kaup';
+  if (rating >= 4.2)          return 'Frábær einkunn';
 };
 
 // Compute the rating based on the recommendation
-const wineRating = computed(() => gradeRecommendation(props.wine.recommendation));
+const wineRating = computed(() => gradeRecommendation(props.wine.recommendation, props.wine.rating));
 </script>
 
 <template>
@@ -59,6 +60,9 @@ const wineRating = computed(() => gradeRecommendation(props.wine.recommendation)
           </div>
           <div v-else-if="wineRating == 'Góð kaup'">
             <img src="~/assets/images/twemoji--slightly-smiling-face.png" class="w-[25px] h-[25px] object-cover">
+          </div>
+          <div v-else-if="wineRating == 'Frábær einkunn'">
+            <img src="~/assets/images/emojione--glowing-star.png" class="w-[25px] h-[25px] object-cover">
           </div>
           <div><p class="mb-5 mx-3 text-2xl font-medium text-[#3E3737]">{{ wineRating }} </p></div>
         </div>

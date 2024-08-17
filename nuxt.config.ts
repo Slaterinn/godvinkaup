@@ -13,16 +13,21 @@ export default defineNuxtConfig({
       },
     }
   },
+
   devtools: { enabled: true },
+
   alias: {
   },
+
   css: ["~/assets/main.css"],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   modules: [
     '@nuxt/ui',
     '@nuxtjs/sitemap',
@@ -31,14 +36,17 @@ export default defineNuxtConfig({
     'nuxt-gtag',
     "@nuxt/image"
   ],
+
   gtag: {
     enabled: true,
     id: 'G-D0Q8GFPQZ6' // Your Google Analytics tracking ID
   },
+
   nitro: {
     compressPublicAssets: {
       brotli: true
     }
   },
-  
+
+  compatibilityDate: '2024-08-17',
 });
