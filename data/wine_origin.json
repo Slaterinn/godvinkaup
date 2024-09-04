@@ -1,0 +1,266 @@
+[
+    {
+        "country": "Argent\u00edna",
+        "origin_district": "Mendoza"
+    },
+    {
+        "country": "Argent\u00edna",
+        "origin_district": "Salta"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
+        "origin_district": "Adelaide"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
+        "origin_district": "Barossa"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
+        "origin_district": "Big Rivers"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
+        "origin_district": "Fleurie"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
+        "origin_district": "Su\u00f0ur-\u00c1stral\u00eda"
+    },
+    {
+        "country": "Austurr\u00edki",
+        "origin_district": "Burgenland"
+    },
+    {
+        "country": "Austurr\u00edki",
+        "origin_district": "Niederosterreich"
+    },
+    {
+        "country": "Bandar\u00edkin",
+        "origin_district": "Central Coast"
+    },
+    {
+        "country": "Bandar\u00edkin",
+        "origin_district": "Central Valley"
+    },
+    {
+        "country": "Bandar\u00edkin",
+        "origin_district": "Kaliforn\u00eda"
+    },
+    {
+        "country": "Bandar\u00edkin",
+        "origin_district": "North Coast"
+    },
+    {
+        "country": "Bandar\u00edkin",
+        "origin_district": "Washington"
+    },
+    {
+        "country": "Chile",
+        "origin_district": "Aconcagua"
+    },
+    {
+        "country": "Chile",
+        "origin_district": "Coquimbo"
+    },
+    {
+        "country": "Chile",
+        "origin_district": "Valle de Central"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Alsace"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Bordeaux"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Bourgogne"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Champagne"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Jura"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Languedoc-Roussillon"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Loire"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Provence"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Rhone"
+    },
+    {
+        "country": "Frakkland",
+        "origin_district": "Su\u00f0vestur-Frakkland"
+    },
+    {
+        "country": "Georg\u00eda",
+        "origin_district": "Kakheti"
+    },
+    {
+        "country": "\u00edtal\u00eda",
+        "origin_district": "Veneto "
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Abruzzo"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Campania"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Emilia-Romagna"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Friuli-Venezia Giulia"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Lombardia"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Marche"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Piemonte"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Puglia"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Sardin\u00eda"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Sikiley"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Toskana"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Trentino-Alto Adige"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Umbria"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "Veneto "
+    },
+    {
+        "country": "N/F",
+        "origin_district": "N/F"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Alentejo"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Dao e Lafoes"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Douro"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Lisboa"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Peninsula de Setubal"
+    },
+    {
+        "country": "Port\u00fagal",
+        "origin_district": "Vinho Verde"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Aragon"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Castilla La Mancha"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Castilla y Leon"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Galis\u00eda"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Katal\u00f3n\u00eda"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Murcia"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Navarra"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Rioja"
+    },
+    {
+        "country": "Sp\u00e1nn",
+        "origin_district": "Valencia"
+    },
+    {
+        "country": "Su\u00f0urafr\u00edka",
+        "origin_district": "Breede River Valley"
+    },
+    {
+        "country": "Su\u00f0urafr\u00edka",
+        "origin_district": "Coastal Region"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "Franken"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "Mosel"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "Nahe"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "Pfalz"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "Rheinhessen"
+    }
+]
