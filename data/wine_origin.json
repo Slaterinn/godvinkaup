@@ -5,7 +5,15 @@
     },
     {
         "country": "Argent\u00edna",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Argent\u00edna",
         "origin_district": "Salta"
+    },
+    {
+        "country": "Armen\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "\u00c1stral\u00eda",
@@ -25,6 +33,10 @@
     },
     {
         "country": "\u00c1stral\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "\u00c1stral\u00eda",
         "origin_district": "Su\u00f0ur-\u00c1stral\u00eda"
     },
     {
@@ -34,6 +46,10 @@
     {
         "country": "Austurr\u00edki",
         "origin_district": "Niederosterreich"
+    },
+    {
+        "country": "Austurr\u00edki",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Bandar\u00edkin",
@@ -53,7 +69,15 @@
     },
     {
         "country": "Bandar\u00edkin",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Bandar\u00edkin",
         "origin_district": "Washington"
+    },
+    {
+        "country": "B\u00falgar\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Chile",
@@ -62,6 +86,10 @@
     {
         "country": "Chile",
         "origin_district": "Coquimbo"
+    },
+    {
+        "country": "Chile",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Chile",
@@ -97,6 +125,10 @@
     },
     {
         "country": "Frakkland",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Frakkland",
         "origin_district": "Provence"
     },
     {
@@ -112,8 +144,16 @@
         "origin_district": "Kakheti"
     },
     {
-        "country": "\u00edtal\u00eda",
-        "origin_district": "Veneto "
+        "country": "Georg\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Grikkland",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "\u00cdsrael",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "\u00cdtal\u00eda",
@@ -138,6 +178,10 @@
     {
         "country": "\u00cdtal\u00eda",
         "origin_district": "Marche"
+    },
+    {
+        "country": "\u00cdtal\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "\u00cdtal\u00eda",
@@ -172,8 +216,32 @@
         "origin_district": "Veneto "
     },
     {
-        "country": "N/F",
-        "origin_district": "N/F"
+        "country": "Kr\u00f3at\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "L\u00edbanon",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Marokk\u00f3",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Mold\u00f3v\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Nor\u00f0urmaked\u00f3n\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "N\u00fdjasj\u00e1land",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "\u00d3skr\u00e1\u00f0",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Port\u00fagal",
@@ -193,11 +261,19 @@
     },
     {
         "country": "Port\u00fagal",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Port\u00fagal",
         "origin_district": "Peninsula de Setubal"
     },
     {
         "country": "Port\u00fagal",
         "origin_district": "Vinho Verde"
+    },
+    {
+        "country": "R\u00famen\u00eda",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Sp\u00e1nn",
@@ -229,11 +305,19 @@
     },
     {
         "country": "Sp\u00e1nn",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Sp\u00e1nn",
         "origin_district": "Rioja"
     },
     {
         "country": "Sp\u00e1nn",
         "origin_district": "Valencia"
+    },
+    {
+        "country": "St\u00f3rabretland",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "Su\u00f0urafr\u00edka",
@@ -242,6 +326,18 @@
     {
         "country": "Su\u00f0urafr\u00edka",
         "origin_district": "Coastal Region"
+    },
+    {
+        "country": "Su\u00f0urafr\u00edka",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Ungverjaland",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
+    },
+    {
+        "country": "Uruguay",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "\u00de\u00fdskaland",
@@ -254,6 +350,10 @@
     {
         "country": "\u00de\u00fdskaland",
         "origin_district": "Nahe"
+    },
+    {
+        "country": "\u00de\u00fdskaland",
+        "origin_district": "\u00d3skr\u00e1\u00f0"
     },
     {
         "country": "\u00de\u00fdskaland",
