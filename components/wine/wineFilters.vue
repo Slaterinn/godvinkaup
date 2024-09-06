@@ -86,7 +86,7 @@ onMounted(() => {
     //Endurmappa Enskt vínheiti í íslensk til að setja í ref gildið.
     wineAttributes.value.isOrganic = ReverseMapping(isOrganicMapping, query.isOrganic);
   }
-  
+
   if (query.wineCountry) {
     wineAttributes.value.wineCountry = query.wineCountry;
   }
@@ -173,7 +173,7 @@ const resetFilters = () => {
   </button>
 </div>
 <div id="wine-filters" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full font-montserrat">
-  <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737]">
+  <div class="mx-auto max-w-3xl md:w-full bg-[#FFE7D4] rounded-lg shadow m-5 text-[#3E3737] max-h-[90vh] overflow-y-auto">
     <div class="m-2 max-w-screen-md">
       <div class="rounded-xl p-6">
         <h2 class=" text-xl font-bold">Þrengdu niðurstöðurnar</h2>
