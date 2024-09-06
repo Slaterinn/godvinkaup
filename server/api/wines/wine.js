@@ -3,10 +3,8 @@ import wines from "~/data/wines_json.json";
 
 
 export default defineEventHandler((event) => {
-  const {search, category, minPrice, maxPrice, isOrganic} = getQuery(event);
+  const {search, category, minPrice, maxPrice, isOrganic, wineCountry, wineDistrict} = getQuery(event);
   
-  
-
   let filteredWines = wines
 
 
@@ -53,6 +51,18 @@ export default defineEventHandler((event) => {
   if(isOrganic) {
     filteredWines = filteredWines.filter((wine) => {
       return wine.is_organic === isOrganic || isOrganic === 'Any'
+    })
+  } 
+
+  if(wineCountry) {
+    filteredWines = filteredWines.filter((wine) => {
+      return wine.country === wineCountry || wineCountry === 'Öll lönd'
+    })
+  } 
+
+  if(wineDistrict) {
+    filteredWines = filteredWines.filter((wine) => {
+      return wine.origin_district === wineDistrict || wineDistrict === 'Öll svæði'
     })
   } 
   

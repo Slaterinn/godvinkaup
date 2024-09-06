@@ -4,11 +4,44 @@ const router = useRouter();
 
 const searchInput = ref("");
 
+const { wineOrigin } = useWineOrigin(); //winwOrigin kemur frá wine_origin.json
+const distinctCountry = [...new Set(wineOrigin.map(item => item.country))];
+distinctCountry.unshift("Öll lönd"); // Add "Öll" at the beginning of the array
+const filteredwineOrigin = ref(wineOrigin); // Populate with all options initially
+
 const wineAttributes = ref({
   category: "Allar",
   min: "",
   max: "",
-  isOrganic : "Öll vín"
+  isOrganic : "Öll vín",
+  wineCountry: "Öll lönd", //land sem á að filtera á district
+  wineDistrict: "Öll svæði" //district sem country á að filtera á
+});
+
+
+//watcher á country til að sía líka district:
+watch(() => wineAttributes.value.wineCountry, (newValue) => {
+  if (!newValue || newValue === "Öll lönd") {
+    const distinctDistricts = [...new Set(wineOrigin.map(item => item.origin_district))]
+      .filter(Boolean) // Remove any falsy values like null or undefined
+      .sort(); // Sort alphabetically
+
+    filteredwineOrigin.value = distinctDistricts.map(district => ({ origin_district: district }));// Reset to all options if "Allar" is selected
+  } else {
+    filteredwineOrigin.value = wineOrigin.filter(item => item.country === newValue); // Filter based on selected value
+  }
+});
+
+// Add a watcher for changes in wineCountry ref
+watch(() => wineAttributes.value.wineCountry, (newValue) => {
+  // Check if wineType2 is currently selected
+  const currentWineDistrict = wineAttributes.value.wineDistrict;
+
+  // If wineType2 is not 'Öll svæði' and the current selection is not valid with the new selection in wineType1
+  if (currentWineDistrict !== 'Öll svæði' && !wineOrigin.find(item => item.country === newValue && item.origin_district === currentWineDistrict)) {
+    // Reset wineType2 to 'Öll svæði'
+    wineAttributes.value.wineDistrict = 'Öll svæði';
+  }
 });
 
 // Mapping object to convert category values
@@ -54,6 +87,22 @@ onMounted(() => {
     wineAttributes.value.isOrganic = ReverseMapping(isOrganicMapping, query.isOrganic);
   }
   
+  if (query.wineCountry) {
+    wineAttributes.value.wineCountry = query.wineCountry;
+  }
+
+  // Ensure districts are distinct and sorted on page load
+  const filteredDistricts = [...new Set(wineOrigin
+    .filter(item => item.country === wineAttributes.value.wineCountry || wineAttributes.value.wineCountry === "Öll lönd")
+    .map(item => item.origin_district))]
+    .filter(Boolean)
+    .sort();
+
+  filteredwineOrigin.value = filteredDistricts.map(district => ({ origin_district: district }));
+
+  if (query.wineDistrict) {
+    wineAttributes.value.wineDistrict = query.wineDistrict;
+  }
 });
 
 
@@ -78,6 +127,13 @@ const onChangeFilter = () => {
   // Map displayed category value to query parameter value
   queryParams.isOrganic = isOrganicMapping[wineAttributes.value.isOrganic]
 
+  if (wineAttributes.value.wineCountry){
+    queryParams.wineCountry = wineAttributes.value.wineCountry
+  }
+
+  if (wineAttributes.value.wineDistrict){
+    queryParams.wineDistrict = wineAttributes.value.wineDistrict
+  }
 
   console.log(queryParams)
 
@@ -96,6 +152,9 @@ const resetFilters = () => {
   wineAttributes.value.category = "Allar",
   searchInput.value="",
   wineAttributes.value.isOrganic = "Öll vín"
+
+  wineAttributes.value.wineCountry = "Öll lönd";
+  wineAttributes.value.wineDistrict = "Öll svæði";
 };
 
 
@@ -153,6 +212,20 @@ const resetFilters = () => {
             <select id="isOrganic" v-model="wineAttributes.isOrganic" class="mt-2 block w-full rounded-md text-[#3E3737] border bg-gray-100 border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
               <option>Öll vín</option>
               <option>Lífræn vín</option>
+            </select>
+          </div>
+          <div class="flex flex-col">
+            <label for="wineCountry" class="text-stone-600 text-sm font-medium">Land</label>
+            <select id="wineCountry" v-model="wineAttributes.wineCountry" label="Land" class="mt-2 block w-full rounded-md text-[#3E3737] border bg-gray-100 border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+            <option v-for="country in distinctCountry" :key="country">{{ country }}</option>
+          </select>
+          </div>
+
+         <div class="flex flex-col">
+            <label for="wineDistrict" class="text-stone-600 text-sm font-medium">Svæði</label>
+            <select id="wineDistrict" label="Svæði" v-model="wineAttributes.wineDistrict" class="mt-2 block w-full rounded-md text-[#3E3737] border bg-gray-100 border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+              <option key="districtFilter">Öll svæði</option>
+              <option v-for="district in filteredwineOrigin" :key="district">{{ district.origin_district }}</option>
             </select>
           </div>
         </div>
