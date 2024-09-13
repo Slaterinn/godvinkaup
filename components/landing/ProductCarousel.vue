@@ -52,19 +52,7 @@ const items1 = [{
     rating: '4.1',
     wineType: 'Rauðvín',
     wineColor: 'text-[#a82548]'
-  }, {
-    name: 'Day One Carmenere',
-    img: 'https://images.vivino.com/thumbs/el1n78g-RgOjLEheat2MRA_pb_x600.png',
-    description: 'Gott Carmenere vín frá Chile á góðu verði! Þroskaðir rauðir áxextir syngja hér forsönginn með bland af jurtatónum í bakröddum en það má jafnvel finna þarna aðeins keim af súkkulaði og kaffi. Þrátt fyrir þessa flóknu lýsingu er þetta vín nokkuð þægilegt og auðvelt að kynnast því.',
-    seller: 'ÁTVR',
-    price: '2.699 kr',
-    grapes: 'Carmenere',
-    country: 'Chile- Colchagua',
-    link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=28972',
-    link_vivino: 'https://www.vivino.com/US-CA/en/montgras-day-one-carmenere/w/9823094',
-    rating: '4.0',
-    wineType: 'Rauðvín',
-    wineColor: 'text-[#a82548]'}]
+  }]
 
 
 
