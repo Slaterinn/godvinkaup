@@ -14,6 +14,12 @@ export default defineNuxtConfig({
     }
   },
 
+  runtimeConfig: {
+    public: {
+      blogJsonUrl: '/blogs/posts.json' // Optional, used only if fetching directly from the JSON file
+    }
+  },
+
   devtools: { enabled: true },
 
   alias: {

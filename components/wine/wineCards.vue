@@ -1,6 +1,4 @@
 <script setup>
-//const {wines} = useWines()
-
 const props = defineProps({
   wines: Array
 })

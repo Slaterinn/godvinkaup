@@ -20,7 +20,7 @@
     <h2 class="mb-2 text-xl font-bold">Hafa samband</h2>
     <p class="mb-8 text-md font-montserrat text-[#FDA47E] sm:px-16 lg:px-48 dark:text-[#FDA47E] text-justify">
       Höfundur síðunnar er Þröstur Pétursson en öll gögn eiga ÁTVR, Santewines, Untappd og Vivino. Myndin á forsíðunni er tekin af Hermes Rivera og fengin af unsplash.com.
-      Hægt er að hafa samband við mig í gegnum linkedIn, 
+      Hægt er að hafa samband við mig í gegnum linkedIn.
     </p>
     <a href="https://www.linkedin.com/in/throsturpetursson/" target="_blank" rel="noopener noreferrer" >
       <Icon name="i-cib:linkedin" color="#FDA47E" font-size="xx-large"  />

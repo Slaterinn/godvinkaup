@@ -1,0 +1,212 @@
+[{
+  "id": "1",
+  "group": "Nánar um vín",
+  "name": "Mucho mas tinto",
+  "img": "https://images.vivino.com/thumbs/nMRl6FutRX26zFRR1iqtqQ_pb_x600.png",
+  "description": "Geitin á godvinkaup.is! Þetta verður líklega nýja 'go-to' vínið þitt. Ávaxtaríkt en djúprautt vín frá fjölskyldufyrirtækinu Félix Solís á Spáni. Felix Solís hefur verið starfrækt af sömu eigendum í meira en 70 ár og hafa haft það að markmiði að bjóða upp á góð vín sem aðgengileg eru öllum og það á svo sannarlega við þetta vín. Það nær jafnvægi á milli þess að vera þurrt og sætt en það má búast við því að finna keim af vanillu, eik og tóbaki auk þess hefur það sætan keim af rauðum ávöxtum. Allt mjög einkennandi fyrir Tempranillo þrúguna en í bland við Syrah fær það aukið flækjustig og dekkri lit. Mucho más er elegant og eftirminnilegt vín á ótrúlega góðu verði, það er varla hægt að gera mikið betri kaup.",
+  "recommendation": "Þá sem vilja gera frábær kaup, þá sem vilja gæði, þá sem vilja heilla matargesti en er annt um peningana sína.",
+  "seller": "ÁTVR",
+  "price": "2.599 kr",
+  "grapes": "Shiraz/Syrah, Tempranillo",
+  "country": "Spánn",
+  "area": "Blandað",
+  "link_store": "https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25431/",
+  "link_vivino": "https://www.vivino.com/US-CA/en/felix-solis-valdepenas-mucho-mas-tinto/w/6266660",
+  "rating": "4.2",
+  "wineType": "Rauðvín",
+  "wineTypeDetail": "Blandað spænskt rauðvín",
+  "wineColor": "text-[#a82548]",
+  "food_pairing": "Smellpassar sem vín með tapas og þess líkum forréttum. Tapas menning er kannski ekki rótgróin í okkur Íslendinga en við elskum ostabakka og þar virka harðir ostar mjög vel. Mucho mas hentar líka mjög vel með fitulitlu kjöti eins og hverskyns villibráð. Samt sem áður þarf ekkert að finna sérstakan mat eða tilefni til að opna flösku, þegar tapinn er dreginn úr er tilefnið komið.",
+  "boldness": "Nokkuð kraftmikið",
+  "boldness_grade": "70",
+  "dryness": "Millisætt",
+  "dryness_grade": "50",
+  "sourness": "Hóflega súrt",
+  "tannin_grade": "40",
+  "tannin": "Mjúk tannín",
+  "sourness_grade": "40",
+  "detail_intro": "Vín sem eru gerð úr blöndu af Tempranillu, Grenache og Syrah bjóða gjarnan upp á dýpt og margrbreytileika en eru samt aðgengileg. Hér fyrir neðan tökum við saman einkenni vínsins og skoðum aðeins hvernig ólíkar þrúgur koma að borðinu.",
+  "grape_details": [
+      {
+        "name": "Tempranillo",
+        "flavor": "Rauð ber, fíkja, tóbak og dill. Vinsælasta þrúgan á Spáni og sérstaklega í Rioja. Nokkuð tannínrík á móti sætum berjakeim og geta þróast í mörg ár á flösku.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Miðlungs tannín." },
+          "acidity": { "name": "Sýra", "text": "Meðal- til mikil sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Miðlungs- til mikil fylling" }
+        }
+      },
+      {
+        "name": "Grenache",
+        "flavor": "Ber, plómur og kryddkeimur. Býr til bragðmikil og þétt rauðvín og rúbínlituð rósavín. Bruggarar í Suður-Rónardalnum í Frakklandi eru orðnir sérfræðingar í þessari þrúgu en hún kemur upprunarlega frá Spáni!",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Miðlungs tannín" },
+          "acidity": { "name": "Sýra", "text": "Miðlungs sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Létt til miðlungsþétt" }
+        }
+      },
+      {
+        "name": "Syrah",
+        "flavor": "Dökkir ávextir, súkkulaði, pipar. Vín úr Syrah eru yfirleitt ríkuleg og kröftug vín en þrúgan er uppruninn í Rónardalnum í Frakklandi. ",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Meðalhá tannín" },
+          "acidity": { "name": "Sýra", "text": "Meðalhá sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Mikil fylling" }
+        }
+      }
+    ]
+
+}, {
+  "id": "2",
+  "group": "Nánar um vín",
+  "name": "Masso Antico Primitivo",
+  "img": "https://images.vivino.com/thumbs/q8BUc8n8Qkivs11SxrXZqg_pb_x600.png",
+  "description": "Þrúgurnar sem notaðar eru fyrir vínið eru ræktaðar með Alberello aðferð sem hentar sérstaklega í þurru og heitu loftslagi suður-Ítalíu. Vínviðurinn er stuttur og þéttvaxinn sem gerir hann vindþolnari en aftur á móti er erfiðara að tína berin, því það þarf að gera það með höndum. Þetta skilar hér þéttu víni, dökkum lit og meira afgerandi bragði og ilm af svörtum skógarávöxtum og reyk. Ertu að fara að grilla í sól og 5 stiga hita? Gríptu þá þessa með og paraðu með grillkjötinu og þú verður ekki fyrir vonbrigðum!",
+  "recommendation": "Þá sem ætla að grilla þó það séu 5 gráður úti og vindurinn hvín inn undir lokið á grillinu.",
+  "seller": "ÁTVR",
+  "price": "2.590 kr",
+  "grapes": "Primitivo",
+  "country": "Ítalía",
+  "area": "Puglia",
+  "link_store": "https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=23603",
+  "link_vivino": "https://www.vivino.com/US-CA/en/masso-antico-appassito-primitivo/w/5418496",
+  "rating": "4.1",
+  "wineType": "Rauðvín",
+  "wineTypeDetail": "Suður-ítalskt Primitivo Rauðvín",
+    "wineColor": "text-[#a82548]",
+    "food_pairing": "Frábært vín með grillkjöti, gömlum ostum og jafnvel bragðmiklum pastaréttum.",
+    "boldness": "Kröftugt",
+    "boldness_grade": "75",
+    "dryness": "Hálf sætt",
+    "dryness_grade": "50",
+    "sourness": "Lítil sýra",
+    "sourness_grade": "20",
+    "tannin": "Mjúk tannín",
+    "tannin_grade": "30",
+    "detail_intro": "Þetta ítalska Primitivo býður upp á ríkulega munnfylli og sterka bragðtóna af þroskuðum ávöxtum og kryddi en það er vanilla rekur lestina.",
+    "grape_details": [
+      {
+        "name": "Primitivo",
+        "flavor": "Þekkist einnig sem Zinfandel, sérstaklega í norður Ameríku. Vín úr þessari þrúgu eru yfirleitt djörf, ávaxtarauð vín með ríkjandi bragð af sultuðum áxöxtum og kryddkeim.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Kröftug tannín." },
+          "acidity": { "name": "Sýra", "text": "Miðlungs sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Mikil fylling" }
+        }
+      }
+    ]
+  }, {
+    "id": "3",
+    "group": "Nánar um vín",
+    "name": "Big Boys Zinfandel",
+    "img": "https://images.vivino.com/thumbs/CWH9WejMQVOPH53hnaOFMw_pb_x600.png",
+    "description": "Á flöskumiðanum eru stórir strákar en þetta vín er ekki bara fyrir stóra stráka heldur alla. Silkimjúkt ítalskt rauðvín frá Puglia í hælnum á Ítalíustígvélinu. Vínið er geymt á eikatrunnum sem gefur því eikartóna og vanillu en einnig mýkri tannín. Vanilla og eik blandast hér vel við bragð af rúsínum, súkkulaði/kaffi og lakkrís. Auðdrekkanlegt en í senn nokkuð flókið vín sem parast mjög vel pasta- og kjötréttum af ýmsu tagi.",
+    "recommendation": "Þá sem vilja þykkt og mikið vín sem er ekki of þurrt.",
+    "seller": "ÁTVR",
+    "price": "2.799 kr",
+    "grapes": "Zinfandel",
+    "country": "Ítalía",
+    "area": "Puglia",
+    "link_store": "https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=24325",
+    "link_vivino": "https://www.vivino.com/US-CA/en/big-boys-zinfandel/w/4401105",
+    "rating": "4.1",
+    "wineType": "Rauðvín",
+    "wineTypeDetail": "Suður-ítalskt Primitivo Rauðvín",
+    "wineColor": "text-[#a82548]",
+    "food_pairing": "Passar vel með pasta- og kjötréttum af ýmsu tagi. Sérstaglega með þéttari réttum eins og svínarfijum, toguðu svínakjöti.",
+    "boldness": "Kröftugt",
+    "boldness_grade": "80",
+    "dryness": "Hálf sætt",
+    "dryness_grade": "40",
+    "sourness": "Lítil sýra",
+    "sourness_grade": "15",
+    "tannin": "Mild tannín",
+    "tannin_grade": "20",
+    "detail_intro": "Big Boys Zinfandel býr yfir ríkulegu bragði með tón af rúsínum, súkkulaði, og lakkrís...",
+    "grape_details": [
+      {
+        "name": "Zinfandel",
+        "flavor": "Iðulega þekkt sem Primitivo á Ítalíu. Vín úr þessari þrúgu eru yfirleitt djörf, ávaxtarauð vín með ríkjandi bragð af sultuðum áxöxtum og kryddkeim.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Kröftug tannín." },
+          "acidity": { "name": "Sýra", "text": "Miðlungs sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Mikil fylling" }
+        }
+      }
+    ]
+  }
+  , {
+    "id": "4",
+    "name": "Silk & Spice Red Blend",
+    "group": "Nánar um vín",
+    "img": "https://images.vivino.com/thumbs/uShQu12ZReOajbocNCabXQ_pb_x600.png",
+    "description": "Markmið framleiðendans er að blanda saman mismunandi þrúgum og búa til aðgengileg vín, bæði hvað varðar smökkun og verð. Hér höfum við ávaxtaríkt vín án þess þó að það sé mjög sætt. Það er frekar í þurrari kantinum. Þetta er djarft portúgalskt vín með auðkennandi bragði af dökkum ávöxtum sem vega salt á móti þéttri áferð. Í hvert skipti sem þú tekur sopa þá finnurðu nýtt kryddbragð en þar má einkenna allt frá svörtum pipar yfir í appelsínubörk og kanil. Ekki verður það verra ef þú geymir það aðeins en ég veit það er erfitt að sitja á því þannig ég mæli með því að setja það frekar uppí vínrekka og aldrei sitja á víni aftur, það er skrítið.",
+    "recommendation": "Þá sem vilja kröfuga blöndu af sér-portúgölskum þrúgum í flösku á viðráðanlegu verði.",
+    "seller": "ÁTVR",
+    "price": "2.599 kr",
+    "grapes": "40% Touriga Nacional, 20% Alicante Bouchet, 20% Baga, 20% Syrah",
+    "country": "Portúgal",
+    "link_store": "https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25197",
+    "link_vivino": "https://www.vivino.com/US-CA/en/silk-spice-red-blend/w/4843593",
+    "rating": "4.1",
+    "wineType": "Rauðvín",
+    "wineTypeDetail": "Rauður Portúgali",
+    "wineColor": "text-[#a82548]",
+    "food_pairing": "Gott eitt og sér en passar vel með lamba- og nautakjöti. Einnig gott með réttum með elduðum tómötum eins og lasagna eða pítsu.",
+    "boldness": "Mjög kröftugt",
+    "boldness_grade": "90",
+    "dryness": "Lítið sætt, frekar þurrt",
+    "dryness_grade": "35",
+    "sourness": "Miðlungs sýra",
+    "sourness_grade": "50",
+    "tannin": "Miðlungs tannín",
+    "tannin_grade": "50",
+    "detail_intro": "Hér koma saman 4 rauðar þrúgur sem saman búa til djúprautt og kröftugt vín sem er öðru leyti laust við öfgar. Djúprauði liturinn kemur líklega að stórum hluta frá frá Touriga Nacional. Allar þrúgurnar leggja til dökka ávexti og krydd að einhverju en mismiklu leyti.",
+    "grape_details": [
+      {
+        "name": "Touriga Nacional",
+        "flavor": "Rauð þrúga sem var upphaflega notuð í púrtvín en er nú að finna í rauðvínum, oft blönduðum, frá Duoro dalnum. Einkennandi bragð af bláberjum, plómu og myntu.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Kröftug tannín" },
+          "acidity": { "name": "Sýra", "text": "Mikil sýra" },
+          "sweetness": { "name": "Sæta", "text": "Frekar þurrt" },
+          "body": { "name": "Fylling", "text": "Þétt fylling" }
+        }
+      },
+      {
+        "name": "Alicante Bouschet",
+        "flavor": "Nokkuð sjaldgæf þrúga sem hefur rauða húð og rautt hold. Dökkir ávextir og pipar. Þekkt fyrir dökkan lit og bragðmikil vín.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Miðlungshá tannín" },
+          "acidity": { "name": "Sýra", "text": "Miðlungshá sýra" },
+          "sweetness": { "name": "Sæta", "text": "Frekar þurrt" },
+          "body": { "name": "Fylling", "text": "Þétt fylling" }
+        }
+      },
+      {
+        "name": "Baga",
+        "flavor": "Stór partur af uppskeru Baga fer í þekkta Portúgalska Mathesu rósarvínið en það getur búið til flott vín sem geymast vel. Einkennandi bragð af dökkum berjum og kakó.",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Kröftug tannín" },
+          "acidity": { "name": "Sýra", "text": "Mikil sýra" },
+          "sweetness": { "name": "Sæta", "text": "Frekar þurrt" },
+          "body": { "name": "Fylling", "text": "Nokkuð þétt fylling" }
+        }
+      },
+      {
+        "name": "Syrah",
+        "flavor": "Dökkir ávextir, súkkulaði, pipar. Vín úr Syrah eru yfirleitt ríkuleg og kröftug vín en þrúgan er uppruninn í Rónardalnum í Frakklandi. ",
+        "attributes": {
+          "tannins": { "name": "Tannín", "text": "Meðalhá tannín" },
+          "acidity": { "name": "Sýra", "text": "Meðalhá sýra" },
+          "sweetness": { "name": "Sæta", "text": "Nokkuð þurrt" },
+          "body": { "name": "Fylling", "text": "Mikil fylling" }
+        }
+      }
+    ]
+  }]
