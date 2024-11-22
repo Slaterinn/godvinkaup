@@ -41,10 +41,10 @@ const truncatedDescription = computed(() => {
 
     <!-- Main content on the right -->
     <div class="flex-grow">
-      <!-- Group/category label -->
+      <!-- Group/category label 
       <p class="text-sm text-[#FDA47E] font-semibold uppercase tracking-wider mb-1">
         {{ props.post.group }}
-      </p>
+      </p>-->
 
       <div class="font-teko tracking-wide mb-2 text-[#FDA47E]">
         <h3 class="text-3xl md:text-4xl">{{ props.post.name }}</h3>
