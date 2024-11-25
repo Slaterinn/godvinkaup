@@ -282,7 +282,7 @@ const items1 = [{
 <div class="flex justify-center items-center py-20">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
     <div class=" font-teko tracking-wider mb-7 text-[#FDA47E]">
-      <h3 class="text-4xl md:text-5xl">Frábær rauðvín upp að 5.000 kr:</h3>
+      <h3 class="text-4xl md:text-5xl">Frábær vín upp að 5.000 kr:</h3>
       <p class="text-lg md:text-xl">Gæðavín á viðráðanlegu verði</p>
     </div>
     <UCarousel v-slot="{ item }" :items="items2" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
