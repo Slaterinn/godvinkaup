@@ -9,13 +9,16 @@ const distinctCountry = [...new Set(wineOrigin.map(item => item.country))];
 distinctCountry.unshift("Öll lönd"); // Add "Öll" at the beginning of the array
 const filteredwineOrigin = ref(wineOrigin); // Populate with all options initially
 
+
+
 const wineAttributes = ref({
   category: "Allar",
   min: "",
   max: "",
   isOrganic : "Öll vín",
   wineCountry: "Öll lönd", //land sem á að filtera á district
-  wineDistrict: "Öll svæði" //district sem country á að filtera á
+  wineDistrict: "Öll svæði", //district sem country á að filtera á
+  seller: "Allir",
 });
 
 
@@ -91,6 +94,10 @@ onMounted(() => {
     wineAttributes.value.wineCountry = query.wineCountry;
   }
 
+  if (query.seller) {
+    wineAttributes.value.seller = query.seller;
+  }
+
   // Ensure districts are distinct and sorted on page load
   const filteredDistricts = [...new Set(wineOrigin
     .filter(item => item.country === wineAttributes.value.wineCountry || wineAttributes.value.wineCountry === "Öll lönd")
@@ -135,6 +142,10 @@ const onChangeFilter = () => {
     queryParams.wineDistrict = wineAttributes.value.wineDistrict
   }
 
+  if (wineAttributes.value.seller) {
+    queryParams.seller = wineAttributes.value.seller;
+  }
+
   console.log(queryParams)
 
   router.push({
@@ -155,6 +166,8 @@ const resetFilters = () => {
 
   wineAttributes.value.wineCountry = "Öll lönd";
   wineAttributes.value.wineDistrict = "Öll svæði";
+
+  wineAttributes.value.seller = "Allir";
 };
 
 
@@ -228,6 +241,18 @@ const resetFilters = () => {
               <option v-for="district in filteredwineOrigin" :key="district">{{ district.origin_district }}</option>
             </select>
           </div>
+
+
+          <div class="flex flex-col">
+            <label for="seller" class="text-stone-600 text-sm font-medium">Seljandi</label>
+            <select id="seller" label="Seljandi" v-model="wineAttributes.seller" class="mt-2 block w-full rounded-md text-[#3E3737] border bg-gray-100 border-gray-200 px-2 py-2 shadow-sm outline-none focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+              <option>Allir</option>
+              <option>ÁTVR</option>
+              <option>Sante</option>
+              <option>Uva</option>
+            </select>
+          </div>
+
         </div>
 
         <div class="mt-6 grid w-full grid-cols-3 justify-end space-x-4 md:flex font-teko text-m">
@@ -240,6 +265,8 @@ const resetFilters = () => {
                   class="active:scale-95 rounded-lg px-8 py-2 font-medium text-white bg-[#625A5A] outline-none focus:ring hover:opacity-90"
                   data-modal-hide="wine-filters">Leita</button>
         </div>
+
+        
       </div>
     </div>
   </div>

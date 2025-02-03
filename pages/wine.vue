@@ -24,6 +24,7 @@ const search    = computed(() => route.query.search)
 const isOrganic = computed(() => route.query.isOrganic)
 const wineCountry = computed(() => route.query.wineCountry)
 const wineDistrict = computed(() => route.query.wineDistrict)
+const seller = computed(() => route.query.seller)
 
 const {data: wines, refresh} = await useFetchWines({
   minPrice,
@@ -32,7 +33,8 @@ const {data: wines, refresh} = await useFetchWines({
   search,
   isOrganic,
   wineCountry,
-  wineDistrict
+  wineDistrict,
+  seller
 });
 
 watch(
