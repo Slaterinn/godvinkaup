@@ -5,7 +5,7 @@ const items1 = [{
     img: 'https://images.vivino.com/thumbs/nMRl6FutRX26zFRR1iqtqQ_pb_x600.png',
     description: 'Geitin á godvinkaup.is! Ávaxtaríkt en djúprautt vín frá fjölskyldufyrirtækinu Félix Solís á Spáni. Þetta vín nær jafnvægi á milli þess að vera þurrt og sætt en það má búast við því að finna keim af vanillu, eik og tóbaki auk þess hefur það sætan keim af rauðum ávöxtum. Allt mjög einkennandi fyrir Tempranillo þrúguna en í bland við Syrah fær það aukið flækjustig og dekkri lit.',
     seller: 'ÁTVR',
-    price: '2.599 kr',
+    price: '2.699 kr',
     grapes: 'Shiraz/Syrah, Tempranillo',
     country: 'Spánn',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25431/',
@@ -31,7 +31,7 @@ const items1 = [{
     img: 'https://images.vivino.com/thumbs/CWH9WejMQVOPH53hnaOFMw_pb_x600.png',
     description: 'Á flöskumiðanum eru stórir strákar en þetta vín er ekki bara fyrir stóra stráka heldur alla. Silkimjúkt ítalskt rauðvín frá Puglia þar sem eik blandast vel við bragð af rúsínum, súkkulaði/kaffi og lakkrís. Auðdrekkanlegt en í senn nokkuð flókið vín sem parast mjög vel pasta- og kjötréttum af ýmsu tagi.',
     seller: 'ÁTVR',
-    price: '2.799 kr',
+    price: '2.899 kr',
     grapes: 'Zinfandel',
     country: 'Ítalía - Puglia',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=24325',
@@ -44,7 +44,7 @@ const items1 = [{
     img: 'https://images.vivino.com/thumbs/uShQu12ZReOajbocNCabXQ_pb_x600.png',
     description: 'Ávaxtaríkt vín án þess þó að vera mjög sætt, heldur frekar í þurrari kantinum. Þetta er djarft portúgalskt vín með auðkennandi bragði af dökkum áxöxtum sem vega salt á móti þéttri áferð. Í hvert skipti sem þú tekur sopa þá finnurðu nýtt kryddbragð en þar má einkenna allt frá svörtum pipar yfir í appeslínubörk og kanil. Ekki verður það verra ef þú geymir það aðeins en það er erfitt að sitja á því eftir að hafa smakkað.',
     seller: 'ÁTVR',
-    price: '2.599 kr',
+    price: '2.699 kr',
     grapes: '40% Touriga Nacional, 20% Alicante Bouchet, 20% Baga, 20% Syrah',
     country: 'Portúgal',
     link_store: 'https://www.vinbudin.is/heim/vorur/stoek-vara.aspx/?productid=25197',
@@ -56,7 +56,7 @@ const items1 = [{
 
 
 
-  const items2 = [{
+  const items2 = [/*{
     name: 'Antieri susumaniello',
     img: 'https://images.vivino.com/thumbs/-cl2YA2cSAO65wUQPKsmuw_pb_x600.png',
     description: 'Kröftugt og ríkt rautt Puglia-vín sem ber með sér kraftmikinn ilm og bragð og kryddaðri plómusultu með negul og tóbaki. Þétt ávaxtabragðið fær faðmlag frá fíngerðu tanníni og kanill kyssir það bless. Þetta er eiginlega rosalegt vín og það verður að fá að anda í góðan tíma til að losa um epískt bragðið.',
@@ -82,7 +82,7 @@ const items1 = [{
     rating: '4.3',
     wineType: 'Rauðvín',
     wineColor: 'text-[#a82548]'
-  }, {
+  }, */{
     name: 'Pazo de Señorans Albariño',
     img: 'https://images.vivino.com/thumbs/YKgwsZ-YRg6bd51NQ_cMDw_pb_x600.png',
     description: 'Skörp sýra, sítrus og græn epli einkenna þetta vín frá vesturströnd Spánar. Eftir hvern frískandi sopann meðan sítrusinn situr á tunginni þá finnurðu fyrir þrá í næsta sopa, passaðu bara að það sjái enginn þegar þú sleikir glasið að innan. Annars á þessi árgangur 2022 að vera einn sá besti hingað til frá Pazo de Señorans.',
@@ -186,52 +186,6 @@ const items1 = [{
 
 
 <template>
-
-<div class="flex justify-center items-center py-20">
-  <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">
-    <div class=" font-teko tracking-wider mb-7 text-[#FDA47E]">
-      <h3 class="text-4xl md:text-5xl">Góð kaup í fríhöfninni:</h3>
-      <p>Gerðu líka góð kaup við landamærin!</p>
-    </div>
-    <UCarousel v-slot="{ item }" :items="items3" :ui="{ item: 'basis-full' }" arrows class="max-h-screen bg-[#FFE7D4] rounded-lg p-3 sm:p-[5%] ">
-      <img title="Highlighted_product" :src="item.img" :alt="item.name" draggable="false" loading="lazy" class="w-auto max-h-[70vh] md:max-h-full">
-      <div class="flex flex-col p-5">
-        <div class="grid grid-cols-1 gap-3 lg:gap-5">
-          <p class="text-xl" :class="`${item.wineColor}`">{{item.wineType}}</p>
-          <h2 class="text-4xl md:text-5xl font-medium">{{ item.name }}</h2>
-          <div>
-            <div>
-              <span class="text-md sm:text-lg">{{ item.description }}</span>
-            </div>
-            <div>
-              <span class="text-md sm:text-lg text-[#7a7a7a]">LÝSING</span>
-            </div>
-          </div>
-          <div>
-            <div>
-              <span class="text-md sm:text-lg">{{ item.price }}</span>
-            </div>
-            <div>
-              <span class="text-md sm:text-lg text-[#7a7a7a]">VERÐ</span>
-            </div>
-          </div>
-          <div>
-            <div>
-              <span class="text-md sm:text-lg">{{ item.rating }}</span>
-            </div>
-            <div>
-              <span class="text-md sm:text-lg text-[#7a7a7a]">EINKUNN</span>
-            </div>
-          </div>
-        </div>
-        <div class="flex mt-4 md:mt-6 tracking-wide">
-          <a :href="item.link_store" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-white bg-[#2A2424] rounded-lg hover:bg-[#888080] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#625A5A] dark:hover:bg-[#888080] dark:focus:ring-[#352E2E] ">{{item.seller}}</a>
-          <a :href="item.link_vivino" target="_blank" rel="external" class="inline-flex items-center px-4 py-2 text-m font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-700 dark:focus:ring-gray-700 ms-3">Vivino</a>
-        </div>
-      </div>
-    </UCarousel>
-  </div>
-</div>
 
 <div class="flex justify-center items-center py-20">
   <div class="max-w-screen-md w-full px-4 font-teko text-[#3E3737]">

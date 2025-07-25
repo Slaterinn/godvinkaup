@@ -18,10 +18,7 @@
           <a href="/wine" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Vín</a>
         </li>
         <li>
-          <a href="/beer" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Bjór</a>
-        </li>
-        <li>
-          <NuxtLink to="/blogs" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Meira um vín</NuxtLink>
+          <NuxtLink to="/blogs" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Stækkunarglerið</NuxtLink>
         </li>
         <li>
           <NuxtLink to="/about" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Um Góð Vínkaup</NuxtLink>

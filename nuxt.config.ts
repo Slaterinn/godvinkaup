@@ -16,7 +16,11 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      blogJsonUrl: '/blogs/posts.json' // Optional, used only if fetching directly from the JSON file
+      blogJsonUrl: '/blogs/posts.json', // Optional, used only if fetching directly from the JSON file
+      NUXT_PUBLIC_QDRANT_URL: process.env.NUXT_PUBLIC_QDRANT_URL,
+      NUXT_PUBLIC_QDRANT_API_KEY: process.env.NUXT_PUBLIC_QDRANT_API_KEY,
+      NUXT_PUBLIC_QDRANT_COLLECTION: process.env.NUXT_PUBLIC_QDRANT_COLLECTION,
+      NUXT_PUBLIC_OPENAI_API_KEY: process.env.NUXT_PUBLIC_OPENAI_API_KEY,
     }
   },
 

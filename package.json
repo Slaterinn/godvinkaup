@@ -28,6 +28,8 @@
     "@iconify-json/twemoji": "^1.1.16",
     "@nuxt/ui": "^2.13.0",
     "@nuxtjs/robots": "^3.0.0",
-    "@nuxtjs/sitemap": "^5.1.2"
+    "@nuxtjs/sitemap": "^5.1.2",
+    "@qdrant/js-client-rest": "^1.15.0",
+    "openai": "^5.10.2"
   }
 }
