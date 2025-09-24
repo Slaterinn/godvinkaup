@@ -30,6 +30,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^5.1.2",
     "@qdrant/js-client-rest": "^1.15.0",
+    "compromise": "^14.14.4",
     "openai": "^5.10.2"
   }
 }

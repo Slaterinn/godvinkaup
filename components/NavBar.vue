@@ -15,7 +15,7 @@
     <div class="hidden w-full md:block md:w-auto" id="navbar-default">
       <ul class="font-medium font-montserrat flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0">
         <li>
-          <a href="/wine" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Vín</a>
+          <a href="/wine" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Öll vín</a>
         </li>
         <li>
           <NuxtLink to="/blogs" class="block py-2 px-3 rounded hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-white-700 md:p-0">Stækkunarglerið</NuxtLink>

@@ -21,16 +21,16 @@ const search = async () => {
 
     const data = await res.json();
 
-    if (data.results) {
+    if (data.results && data.results.length) {
       results.value = data.results;
-    } else if (data.result) {
-      message.value = data.result;
+    } else if (data.message) {
+      message.value = data.message;
     } else {
-      message.value = 'Something went wrong.';
+      message.value = 'Eitthvað fór úrskeiðis.';
     }
   } catch (err) {
     console.error(err);
-    message.value = 'Error talking to wine brain 🍷';
+    message.value = 'Vínandinn er e-ð slappur í dag 🍷';
   } finally {
     loading.value = false;
   }
@@ -43,10 +43,10 @@ const search = async () => {
       v-model="query"
       @keyup.enter="search"
       class="w-full border p-2 rounded mb-4"
-      placeholder="Ask about wine..."
+      placeholder="Rauðvín með pasta undir 4000..."
     />
     <button @click="search" class="bg-red-500 text-white px-4 py-2 rounded">
-      Spurðu um meðmæli
+      Fá meðmæli
     </button>
 
     <div v-if="loading" class="mt-4 text-gray-500 animate-pulse">
@@ -57,11 +57,15 @@ const search = async () => {
       {{ message }}
     </div>
 
-    <div v-if="results.length && !loading" class="mt-4 space-y-2">
-      <div v-for="(r, i) in results" :key="i" class="p-4 border rounded">
-        <p><strong>{{ r.wine_name }}</strong> – {{ r.producer }}</p>
-        <p>Rating: {{ r.rating }} ({{ r.rating_count }} votes)</p>
-      </div>
+    <div v-for="(r, i) in results" :key="i" class="p-4 border rounded">
+      <p><strong>{{ r.wine_name }}</strong> – {{ r.producer }}</p>
+      <p>Category: {{ r.category }}</p>
+      <p>Rating: {{ r.rating }} ({{ r.rating_count }} votes)</p>
+      <p>Seller: {{ r.seller }} | Price: {{ r.price }} kr.</p>
+      <p>
+        <a :href="r.seller_url" target="_blank" class="text-blue-600 underline mr-4">Seller</a>
+        <a :href="r.vivino_url" target="_blank" class="text-green-600 underline">Vivino</a>
+      </p>
     </div>
   </div>
 </template>

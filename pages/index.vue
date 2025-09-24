@@ -23,6 +23,5 @@ useSeoMeta({
   <div>
     <LandingPageHero />
     <LandingProductCarousel/>
-    <LandingWineSearch />
   </div>
 </template>
