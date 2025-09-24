@@ -32,5 +32,8 @@
     "@qdrant/js-client-rest": "^1.15.0",
     "compromise": "^14.14.4",
     "openai": "^5.10.2"
+  },
+  "engines": {
+  "node": ">=20.19.0"
   }
 }
