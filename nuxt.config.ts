@@ -15,12 +15,12 @@ export default defineNuxtConfig({
   },
 
   runtimeConfig: {
+    qdrantApiKey: import.meta.env.QDRANT_API_KEY,
+    openaiApiKey: import.meta.env.OPENAI_API_KEY,
     public: {
       blogJsonUrl: '/blogs/posts.json', // Optional, used only if fetching directly from the JSON file
-      NUXT_PUBLIC_QDRANT_URL: process.env.NUXT_PUBLIC_QDRANT_URL,
-      NUXT_PUBLIC_QDRANT_API_KEY: process.env.NUXT_PUBLIC_QDRANT_API_KEY,
-      NUXT_PUBLIC_QDRANT_COLLECTION: process.env.NUXT_PUBLIC_QDRANT_COLLECTION,
-      NUXT_PUBLIC_OPENAI_API_KEY: process.env.NUXT_PUBLIC_OPENAI_API_KEY,
+      qdrantUrl: import.meta.env.QDRANT_URL,
+      qdrantCollection: import.meta.env.QDRANT_COLLECTION,
     }
   },
 

@@ -7,6 +7,8 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event)
   const userQuery = body.query
 
+  const config = useRuntimeConfig()
+
   // Step 1: Parse filters locally with Compromise NLP
   const filters = extractFilters(userQuery)
   console.log('Extracted filters:', filters)
@@ -21,7 +23,7 @@ export default defineEventHandler(async (event) => {
 
   // Step 3: Vector search in Qdrant
   const qdrantResponse = await qdrant.search(
-    process.env.NUXT_PUBLIC_QDRANT_COLLECTION!,
+    config.public.qdrantCollection as string,  // ✅ from runtimeConfig.public
     {
       vector,
       limit: 20,

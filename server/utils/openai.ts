@@ -1,5 +1,7 @@
 import OpenAI from 'openai'
 
+const config = useRuntimeConfig()
+
 export const openai = new OpenAI({
-  apiKey: process.env.NUXT_PUBLIC_OPENAI_API_KEY!
+  apiKey: config.openaiApiKey as string
 })
