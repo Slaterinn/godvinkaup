@@ -9,12 +9,15 @@ export default defineEventHandler(async (event) => {
 
   const config = useRuntimeConfig()
 
+  const openaiClient = openai()
+  const qdrantClient = qdrant()
+
   // Step 1: Parse filters locally with Compromise NLP
   const filters = extractFilters(userQuery)
   console.log('Extracted filters:', filters)
 
   // Step 2: Get embedding from OpenAI
-  const embeddingResponse = await openai.embeddings.create({
+  const embeddingResponse = await openaiClient.embeddings.create({
     model: 'text-embedding-3-small',
     input: userQuery
   })
@@ -22,7 +25,7 @@ export default defineEventHandler(async (event) => {
   const vector = embeddingResponse.data[0].embedding
 
   // Step 3: Vector search in Qdrant
-  const qdrantResponse = await qdrant.search(
+  const qdrantResponse = await qdrantClient.search(
     config.public.qdrantCollection as string,  // ✅ from runtimeConfig.public
     {
       vector,

@@ -1,7 +1,9 @@
+// server/utils/openai.ts
 import OpenAI from 'openai'
 
-const config = useRuntimeConfig()
-
-export const openai = new OpenAI({
-  apiKey: config.openaiApiKey as string
-})
+export const openai = () => {
+  const config = useRuntimeConfig()
+  return new OpenAI({
+    apiKey: config.openaiApiKey, // private, server-only
+  })
+}
