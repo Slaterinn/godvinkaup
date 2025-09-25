@@ -1,4 +1,3 @@
-import { COUNTRY_KEYWORDS } from './countryMap'
 
 // server/utils/extractFilters.ts
 import nlp from 'compromise'
@@ -38,6 +37,21 @@ const CATEGORY_KEYWORDS: Record<string, string[]> = {
   rose: ['rósavín', 'bleikt', 'rosé', 'rose'],
   dessert: ['eftirréttarvín', 'dessert wine', 'port', 'sherry'],
 }
+
+const COUNTRY_KEYWORDS: Record<string, string[]> = {
+  spain: ['spánn', 'spánar', 'spænsk', 'spænskt', 'spænska'],
+  france: ['frakkland', 'frakklands', 'frönsk', 'franskt', 'franska'],
+  italy: ['ítalía', 'ítalíu', 'ítalskt', 'ítalska'],
+  germany: ['þýskaland', 'þýskalands', 'þýsk', 'þýskt', 'þýska'],
+  portugal: ['portúgal', 'portúgalskt', 'portúgölsk', 'portúgalska'],
+  chile: ['chile', 'chílenskt', 'chílensk'],
+  argentina: ['argentina', 'argentínsk', 'argentínskt'],
+  usa: ['bandaríkin', 'usa', 'u.s.a.', 'amerískt'],
+  australia: ['ástralía', 'ástralskt', 'áströlsk'],
+  south_africa: ['suður-afríka', 'suður afríku', 'suðurafrískt'],
+  // add more as needed
+}
+
 
 // Sellers (normalize common names)
 const SELLER_KEYWORDS: Record<string, string[]> = {
