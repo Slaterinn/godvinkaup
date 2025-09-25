@@ -10,7 +10,7 @@
         Gerðu alltaf góð vínkaup
       </h1>
       <p class="mt-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wider font-teko text-white">
-        Segðu Vínandanum hvað þú vilt..
+        Segðu VínAndanum hvað þú vilt..
       </p>
 
       <!-- Hero buttons 
@@ -37,7 +37,10 @@
         <!-- Search results overlay -->
         <div
           v-if="results.length || loading || message"
-          class="absolute left-0 right-0 mt-2 max-h-96 overflow-y-auto bg-white bg-opacity-90 rounded-lg shadow-lg z-50"
+          class="absolute left-0 right-0 mt-2 max-h-96 overflow-y-auto 
+                bg-[#FFE7D4] text-[#302A2A] 
+                dark:bg-[#302A2A] dark:text-[#FFE7D4] 
+                rounded-lg shadow-lg z-50"
         >
           <div v-if="loading" class="text-gray-500 animate-pulse p-4">Hugsar...</div>
           <div v-else-if="message" class="text-red-600 p-4">{{ message }}</div>
@@ -61,7 +64,7 @@
 
                 <!-- Producer, category, rating -->
                 <p class="text-sm text-gray-700">
-                  {{ r.producer }} – {{ r.category }} – {{ r.rating }} ({{ r.rating_count }} votes)
+                  {{ r.producer }} – {{ r.category }} – {{ r.rating }} ({{ r.rating_count }} endurgjafir)
                 </p>
 
                 <!-- Price -->
@@ -71,7 +74,7 @@
 
                 <!-- Links -->
                 <p class="mt-1">
-                  <a :href="r.seller_url" target="_blank" class="text-blue-600 underline mr-4">Seller</a>
+                  <a :href="r.seller_url" target="_blank" class="text-blue-600 underline mr-4">{{ r.seller}}</a>
                   <a :href="r.vivino_url" target="_blank" class="text-green-600 underline">Vivino</a>
                 </p>
               </div>
