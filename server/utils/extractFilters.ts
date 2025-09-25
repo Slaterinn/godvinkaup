@@ -1,3 +1,5 @@
+import { COUNTRY_KEYWORDS } from './countryMap'
+
 // server/utils/extractFilters.ts
 import nlp from 'compromise'
 
@@ -104,7 +106,13 @@ export function extractFilters(query: string): Filters {
     }
   }
 
-  // --- Extract countries (simple heuristic) ---
+  // --- Extract countries ---
+  for (const [country, keywords] of Object.entries(COUNTRY_KEYWORDS)) {
+    if (keywords.some(k => query.includes(k))) {
+      filters.countries.push(country)
+    }
+  }
+  // Optional: still fall back to compromise #Country (English)
   const countryMatch = nlp(query).match('#Country').out('array')
   if (countryMatch.length > 0) {
     filters.countries.push(...countryMatch)
