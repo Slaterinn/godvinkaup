@@ -12,6 +12,8 @@ export default defineEventHandler(async (event) => {
   const openaiClient = openai()
   const qdrantClient = qdrant()
 
+  
+
   // Step 1: Parse filters locally with Compromise NLP
   const filters = extractFilters(userQuery)
   console.log('Extracted filters:', filters)
@@ -78,8 +80,11 @@ export default defineEventHandler(async (event) => {
   wines = wines.filter((wine) => {
     if (filters.minPrice !== undefined && wine.price < (filters.minPrice as any)['num']) return false
     if (filters.maxPrice !== undefined && wine.price > (filters.maxPrice as any)['num']) return false
-    if (filters.minRating !== undefined && wine.rating < filters.minRating) return false
-    if (filters.maxRating !== undefined && wine.rating > filters.maxRating) return false
+
+    const rating = typeof wine.rating === 'object' ? (wine.rating as any).num: Number(wine.rating)
+
+    if (filters.minRating !== undefined && rating < filters.minRating) return false
+    if (filters.maxRating !== undefined && rating > filters.maxRating) return false
     if (filters.sellers.length > 0) {
       const normalizedSeller = wine.seller.toLowerCase()
       const sellerMatch = filters.sellers.some((s) =>
