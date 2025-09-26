@@ -31,7 +31,7 @@ export default defineEventHandler(async (event) => {
     config.public.qdrantCollection as string,  // ✅ from runtimeConfig.public
     {
       vector,
-      limit: 20,
+      limit: 100,
       with_payload: true
     }
   )
